@@ -11,7 +11,7 @@
   external: true
   id: healthcare
 - title: One Glove 
-  description: Improving accesibility in the kitchen through smart glove that pairs with your mobile device (case study coming soon)
+  description: Improving accessibility in the kitchen with a single smart device (case study coming soon)
   url: /#
   show: true
   external: false
