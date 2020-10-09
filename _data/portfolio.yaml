@@ -1,32 +1,20 @@
-- title: GitHub Desktop
-  description: Lowering the barrier of entry to git and software development
-  url: http://desktop.github.com
-  show: true
-  external: true
-  id: desktop
-- title: GitHub CLI
-  description: Designing GitHub for your&nbsp;terminal
-  url: http://cli.github.com
-  show: true
-  external: true
-  id: cli
-- title: GitHub Experiments
-  description: Showcasing experimental machine learning research
-  url: http://experiments.github.com
-  show: false
-  external: true
-  id: experiments
-- title: Kleo
-  description: An award-winning, beginner-inclusive app for art museums
-  url: /project/museum
+- title: Ventra Transit
+  description: Reimagining the chicago commute
+  url: /project/transit
   show: true
   external: false
-  id: kleo
-  site: https://invis.io/VB9OO63AY#/210571241_Home
-- title: Baudelaire
-  description: A modern transitional serif&nbsp;typeface
-  url: /project/baudelaire
+  id: transit
+- title: Next Health
+  description: An award winning mobile app design, bridging the trust gap in women’s healthcare
+  url: https://devpost.com/software/next-health-me43bk
+  show: true
+  external: true
+  id: healthcare
+- title: One Glove 
+  description: Improving accesibility in the kitchen through smart glove that pairs with your mobile device (case study coming soon)
+  url: /#
   show: true
   external: false
-  id: baudelaire
+  id: glove
+
 - 
