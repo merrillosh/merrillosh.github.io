@@ -1,6 +1,6 @@
 ---
 title: Merrill O'Shaughnessy | Ventra Transit
-tag: transit
+tag: Ventra Transit
 type: project
 layout: project
 ---
