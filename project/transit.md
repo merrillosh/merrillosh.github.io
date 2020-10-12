@@ -19,13 +19,12 @@ Ventra is the current electronic fare payment system for all Chicago public tran
 - personalize the transit experience for individual users? 
 - provide clear assistance to riders in need?
 
+
 # Research
-- Analyze the scope of current fare collection systems; evaluate other cities’ methods and determine which platforms/applications/payment methods riders prefer as well as the riders’ contextual differences from our users.
-- Determine the needs of users and their motivations for utilizing Chicago public transportation (CPT) and the Ventra app, the Ventra website, and/or traditional fare collection methods.
-- Identify the pain points of users and evaluate the functionalities/features of the currently available Ventra application to efficiently reduce or eliminate them.
+Before beginning ideation, I sought to analyze the scope of current fare collection systems, determine the needs of users and their motivations for utilizing Chicago public transportation and the Ventra app, and identify the current pain points of users.
 
 ### Audience
-Based on preliminary research on Chicago transit ridership, I identified my main audience as a diverse collection of both regular and temporary commuters. I broke those people down into a few different segments.
+Based on preliminary research on Chicago transit ridership, I identified my main audience as a diverse collection of both regular and temporary commuters. I broke those people down into a few different categories.
 
 1. **Suburban Commuters**—Regular users who primarily ride the Metra train, these users choose public transportation out of convenience and likely use it only to travel to and from work 
 2. **Chicago Natives**—Regular users who live downtown, these users are more likely to use the CTA and Pace buses for all their transportation needs within the city
@@ -45,16 +44,23 @@ I coded hundreds of reviews for the Ventra app from the Google Play App Store fo
 ![Ventra App Reviews](/img/full/transit2.png)
 ###### Some notable customer reviews of the current app's design.
 
-# Brainstorming
-First, we filled out empathy maps for three audiences: Museum Goers, Curators and Museum Owners. A big takeaway from this exercise is that we needed to understand the museum’s perspective more.
+Based on this exercise, I realized I needed to understand real users, not just online reviewers, point of view more, so I gave empathy interviews to a random selection of riders at my local transit stop, the Davis street transit center, which includes an L, Metra, and CTA/Pace bus stop, to capture a variety of user perspectives.
 
-After, we brainstormed problem statements. We picked out the problems we were most interested in and put them into buckets: How might we give visitors the confidence to not understand everything? How might we give visitors a tailored, meaningful experience? How might we measure our effectiveness?
 
-Using these prompts, we brainstormed quick ideas for solutions. Looking back, a lot of our ideas from this brainstorming session made their way into our MVP.
+# Ideation 
+First, I used my research to establish three distinct personas which capture the breadth of potential Ventra mobile app users, not only demographically but in purpose, needs, and pain-points.
+
+### Personas
+1. **Stan Lewinsky**–is a wealthy middle-aged suburban businessman who voluntarily rides the Metra to work
+2. **Monica Ogilvy**–is a young Chicago native and nurse on the South Side who regularly uses CTA and Pace buses 
+3. **Lucas and Marcia Oliveira**– are visiting Chicago for two weeks with their young children; they the ‘L’ and CTA buses to visit tourist destinations. 
+
+Based on these personas as well as user motivations from my research, I created infromal user flows for each task one might wish to complete with the app. I used these user flows to determine the information architecture of the app, relying on repeated actions
+
 
 {:.full}
-![Museum logos](/img/full/museum5.png)
-###### The museums in the Boston area that we spoke with.
+![Information Architecture](/img/full/transit3.png)
+###### The fully expnaded information architecture for the app.
 
 # Professional interviews
 Based on our exercise, we realized we needed to understand the museum's point of view more, so we set up interviews with professionals who worked with or at these organizations. These interviews were to empathize with a new audience, but we were also looking to potentially partner with a museum to execute the project.
