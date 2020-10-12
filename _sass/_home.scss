@@ -157,8 +157,8 @@ $new-beige: #F3E5CF;
 $new-blue: #ced7ec;
 
 body.transit {
-  $foreground: $white;
-  $accent: $black;
+  $foreground: $black;
+  $accent: $white;
 
   background: $new-blue;
   color: $foreground;
