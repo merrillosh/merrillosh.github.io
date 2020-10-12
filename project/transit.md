@@ -19,25 +19,26 @@ Ventra is the current electronic fare payment system for all Chicago public tran
 - personalize the transit experience for individual users? 
 - provide clear assistance to riders in need?
 
-### Research Goals
-- Analyze the scope of current fare collection systems; evaluate other cities’ methods and determine which platforms/applications/payment methods riders prefer as well as the riders’ contextual differences from our users.
-- Determine the needs of users and their motivations for utilizing Chicago public transportation (CPT) and the Ventra app, the Ventra website, and/or traditional fare collection methods.
-- Identify the pain points of users and evaluate the functionalities/features of the currently available Ventra application to efficiently reduce or eliminate them.
-
 # Audience
-Based on preliminary research on Chicago transit ridership, we identified our main audience as a diverse collection of both regular and temporary commuters. We broke those people down into a few different segments.
+Based on preliminary research on Chicago transit ridership, I identified my main audience as a diverse collection of both regular and temporary commuters. I broke those people down into a few different segments.
 
 1. **Suburban Commuters**—Regular users who primarily ride the Metra train, these users choose public transportation out of convenience and likely use it only to travel to and from work 
 2. **Chicago Natives**—Regular users who live downtown, these users are more likely to use the CTA and Pace buses for all their transportation needs within the city
 3. **Tourists and Occasional Riders**—These users are visitng Chicago for a brief time or only use public transportation on occassion, they primarily rely on the 'L' train to see the city or go to leisure events
 
+# Motivations
+I also synthesized users primary motivations for using the mobile app from the UX interviews for its intial release in 2015:
+- reducing time spent in the station
+- convenience of having your “pass” on you all the time (feature not yet incorporated)
+- ease of having route/time/transit info in one place
+- automatic reloading and low balance notifications 
+
+# Pain Points
+I coded hundreds of reviews for the Ventra app from the Google Play App Store for common issues. The full list includes miscellaneous bugs, issues logging in, trouble accessing cards between devices, inaccurate transit info, privacy violations, and overcharging for rides, among many others. 
+
 {:.full}
-![](/img/full/museum8.png)
-
-
-
-
-
+![Ventra App Reviews](/img/full/transit2.png)
+###### Some notable customer reviews of the current app's design.
 
 # Brainstorming
 First, we filled out empathy maps for three audiences: Museum Goers, Curators and Museum Owners. A big takeaway from this exercise is that we needed to understand the museum’s perspective more.
