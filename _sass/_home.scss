@@ -151,10 +151,11 @@ a.project {
 
 $mauve: #C6A1C7;
 $new-gray: #252021;
-$green: #40AB85;
+$green: #89C2BF;
 $purple: #6B4DE4;
 $new-beige: #F3E5CF;
 $new-blue: #ced7ec;
+$coral: #F39588;
 
 body.transit {
   $foreground: $black;
@@ -179,10 +180,10 @@ body.transit {
 }
 
 body.healthcare {
-  $foreground: white;
-  $accent: lime;
+  $foreground: $black;
+  $accent: $coral;
 
-  background: $new-gray;
+  background: $green;
   color: $foreground;
 
   a {
@@ -201,10 +202,10 @@ body.healthcare {
 }
 
 body.glove {
-  $foreground: $black;
-  $accent: yellow;
+  $foreground: $white;
+  $accent: $black;
 
-  background: $mauve;
+  background: $purple;
   color: $foreground;
 
   a {
