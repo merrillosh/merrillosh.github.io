@@ -40,11 +40,11 @@ I also synthesized users primary motivations for using the mobile app from the U
 ### Pain Points
 I coded hundreds of reviews for the Ventra app from the Google Play App Store for common issues. The full list includes miscellaneous bugs, issues logging in, trouble accessing cards between devices, inaccurate transit info, privacy violations, and overcharging for rides, among many others. 
 
+I also gave empathy interviews to a random selection of riders at my local transit stop, the Davis street transit center, which includes an 'L', Metra, and CTA/Pace bus stop, to capture a variety of user perspectives. Many shared the complaints of online reviewers and were interested in expanding Ventra's existing features.
+
 {:.full}
 ![Ventra App Reviews](/img/full/transit2.png)
 ###### Some notable customer reviews of the current app's design.
-
-Based on this exercise, I realized I needed to understand real users, not just online reviewers, point of view more, so I gave empathy interviews to a random selection of riders at my local transit stop, the Davis street transit center, which includes an L, Metra, and CTA/Pace bus stop, to capture a variety of user perspectives. Many shared the complaints of online reviewers, but were also interested in expanding Ventra's existing features by allowing you to scan your phone to pay your fare and improving the transit tracking portion of the app.
 
 
 # Ideation 
@@ -56,6 +56,7 @@ First, I used my research to establish three distinct personas which capture the
 3. **Lucas and Marcia Oliveira**– are visiting Chicago for two weeks with their young children; they the ‘L’ and CTA buses to visit tourist destinations. 
 
 Based on these personas and the user motivations from my research, I created informal user flows for each task one might wish to complete with the app. I used these user flows to determine the information architecture of the app.
+
 
 {:.full}
 ![Information Architecture](/img/full/transit3.png)
@@ -71,20 +72,20 @@ I designed and updated my prototype interatively based on this testing, making s
 
 {:.full}
 ![Low-fidelity app screens](/img/full/transit4.png)
-###### Low-fidelity wireframes
+###### Screens from the Ventra mobile app and my low-fidelity wireframes
 
 # Implementation
 Once I was confident in the functionality of my design, I created an incomplete high-fidelity prototype incorporating both modernized visual design ideas and the current Ventra branding. The wide range of responses I observed during usability testing prompted me to prioritize accessibility over minimalist design by adding labels to all icons and maximizing color contrast within the interface.
 
-### Major features incorporated in the final redesign
+### Major redesign changes
 - **Transit store**-an entirely new feature that allows users to purchase tickets/passes/transit value in one convenient location 
 - **Transit search**-a simplfied transit tracker that encourages users to search for stops and add frequent routes to favorites
-- **Dispute charges**-a simple addition to account history that allows users to dispute charges made to ther Ventra card through the app, avoiding long customer service wait times
+- **Dispute charges**-a simple addition to account history that allows users to dispute charges made to their Ventra card through the app, avoiding long customer service wait times
 - **Journey planner**-a new service that enables users to plan a trip to/from a destination on public transit, purchase any necessary passes/tickets for the trip, and add it to their calendar in advance
 - **Privacy protection**-all users can now choose to accept or decline location services, declining only alters access to features which require location tracking
 
 {:.full}
-![High-fidelity interface](/img/full/transit4.png)
+![High-fidelity interface](/img/full/transit5.mp4)
 ###### An example interaction from the final prototype
 
 # Impact
