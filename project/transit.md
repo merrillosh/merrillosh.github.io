@@ -44,7 +44,7 @@ I coded hundreds of reviews for the Ventra app from the Google Play App Store fo
 ![Ventra App Reviews](/img/full/transit2.png)
 ###### Some notable customer reviews of the current app's design.
 
-Based on this exercise, I realized I needed to understand real users, not just online reviewers, point of view more, so I gave empathy interviews to a random selection of riders at my local transit stop, the Davis street transit center, which includes an L, Metra, and CTA/Pace bus stop, to capture a variety of user perspectives.
+Based on this exercise, I realized I needed to understand real users, not just online reviewers, point of view more, so I gave empathy interviews to a random selection of riders at my local transit stop, the Davis street transit center, which includes an L, Metra, and CTA/Pace bus stop, to capture a variety of user perspectives. Many shared the complaints of online reviewers, but were also interested in expanding Ventra's existing features by allowing you to scan your phone to pay your fare and improving the transit tracking portion of the app.
 
 
 # Ideation 
@@ -55,46 +55,39 @@ First, I used my research to establish three distinct personas which capture the
 2. **Monica Ogilvy**–is a young Chicago native and nurse on the South Side who regularly uses CTA and Pace buses 
 3. **Lucas and Marcia Oliveira**– are visiting Chicago for two weeks with their young children; they the ‘L’ and CTA buses to visit tourist destinations. 
 
-Based on these personas as well as user motivations from my research, I created infromal user flows for each task one might wish to complete with the app. I used these user flows to determine the information architecture of the app, relying on repeated actions
-
+Based on these personas and the user motivations from my research, I created informal user flows for each task one might wish to complete with the app. I used these user flows to determine the information architecture of the app.
 
 {:.full}
 ![Information Architecture](/img/full/transit3.png)
-###### The fully expnaded information architecture for the app.
-
-# Professional interviews
-Based on our exercise, we realized we needed to understand the museum's point of view more, so we set up interviews with professionals who worked with or at these organizations. These interviews were to empathize with a new audience, but we were also looking to potentially partner with a museum to execute the project.
-
-At this point in our process, we were considering many avenues for a final product and deciding whether we wanted to partner with a local museum, use a space at Northeastern, or create a pop-up museum that explored our ideas. We decided to pursue a partnership because we thought that although we would need to deal with museum bureaucracy, it would give us the best opportunity to deal with space and a large collection of work. We were originally most interested in the MFA due to its proximity, traditional space, large collection, and it was a good example of the problems we identified.
-
-{:.full}
-![Sitemap](/img/full/museum6.png)
-###### An early sitemap of the final app
+###### The fully expanded information architecture for the app (zoom for a closer look)
 
 
-# Proof of concept
+# Proof of concept & Usability Testing
+Over several weeks, I worked with this information architecture and my user pain points to produce low-fidelty wireframes for some of the most important app screens and linked them into a very basic interactive prototype. 
 
-After we knew the MFA wouldn’t be a viable partnership, we decided to pursue a mobile app. By working with this platform instead of working with large screens or installations, we will not need to worry about our work becoming rapidly obsolete, and our solution can easily extend to other museums. Additionally, our work can be easily created and implemented, allowing us to quickly learn from feedback and create improvements. Over about 3 weeks, we established the information architecture, sketched wireframes and started preliminary designs.
+I conducted informal usability testing by asking individual Chicago Transit riders to complete some of the aforementioned tasks such as creating a Ventra account, checking transit times on a regular route, and adding transit value to an existing Ventra card and recording the time they took to complete the task as well as the number of incorrect clicks they made. Additionally, I asked users which additional features, if any, made their transportation experience more convenient or more confusing. 
 
-# Working with Harvard Art Museums
-About halfway through the project, we met with the Harvard Art Museums and decided to move forward with using <a href="https://www.harvardartmuseums.org/collections/api">their open API</a> and designing the experience around their space.
+I designed and updated my prototype interatively based on this testing, making several changes to the interface and features.
 
 {:.full}
-![App screens](/img/full/museum7.png)
+![Low-fidelity app screens](/img/full/transit4.png)
+###### Low-fidelity wireframes
 
 # Implementation
-Once we decided on this direction, we designed the prototype iteratively based on in-person testing at the museum itself. Some ideas we explored in this phase included:
+Once I was confident in the functionality of my design, I created an incomplete high-fidelity prototype incorporating both modernized visual design ideas and the current Ventra branding. The wide range of responses I observed during usability testing prompted me to prioritize accessibility over minimalist design by adding labels to all icons and maximizing color contrast within the interface.
 
-**Beacon technology** — We explored placing beacons in the space to power experiences like letting users explore art near them in place
+### Major features incorporated in the final redesign
+- **Transit store**-an entirely new feature that allows users to purchase tickets/passes/transit value in one convenient location 
+- **Transit search**-a simplfied transit tracker that encourages users to search for stops and add frequent routes to favorites
+- **Dispute charges**-a simple addition to account history that allows users to dispute charges made to ther Ventra card through the app, avoiding long customer service wait times
+- **Journey planner**-a new service that enables users to plan a trip to/from a destination on public transit, purchase any necessary passes/tickets for the trip, and add it to their calendar in advance
+- **Privacy protection**-all users can now choose to accept or decline location services, declining only alters access to features which require location tracking
 
-
-**Color based tours** — Using the Harvard Art Museums' robust API, we could use their data to make unique kinds of tours.
-
-
-**Creating your own tours** — By simply letting users select from a list of works on view, then ordering those by room, we could easily create custom tours.
-
-**Audio-based experience** — Utilizing the beacon technology, we also began exploring voice and music based experiences that wouldn't require looking at your phone.
+{:.full}
+![High-fidelity interface](/img/full/transit4.png)
+###### An example interaction from the final prototype
 
 # Impact
+In the end, I hope this project can inspire future updates to the Ventra mobile app and push the city of Chicago and the Chicago Transit Authority to demand better performance from their mobile payment system on behalf of the city's transit riders. 
 
-In the end, we hope the project can be an example to institutions what is possible when a robust, thoughtful API is available. The project won the Humanities & Arts award at [Northeastern’s Research, Innovation, and Science Exposition (RISE)](https://www.northeastern.edu/rise/).
+In October 2020, about two months after I completed this project, the CTA released an updated version of the app including several of my suggested features such as Metra tickets available from the home screen, ability to plan trips in advance, and a simplified UI for the transit tracker. You can check out the improved app [here](https://www.ventrachicago.com/app/).
