@@ -85,7 +85,7 @@ Once I was confident in the functionality of my design, I created an incomplete 
 - **Privacy protection**-all users can now choose to accept or decline location services, declining only alters access to features which require location tracking
 
 {:.full}
-![High-fidelity interface](/img/full/transit5.mp4)
+![High-fidelity interface](/video/full/transit5.mp4)
 ###### An example interaction from the final prototype
 
 # Impact
