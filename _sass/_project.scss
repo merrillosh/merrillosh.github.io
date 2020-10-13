@@ -93,21 +93,21 @@
     }
   }
 
-  p.third {
+  video.third, p.third {
     @extend .third;
     margin-left: 0;
   }
 
-  p.half {
+  video.half, p.half {
     @extend .half;
     margin-left: 0;
   }
 
-  p.full {
+  video.full, p.full {
     @extend .full;
   }
 
-  p.right {
+  video.right, p.right {
     @extend .right;
   }
 

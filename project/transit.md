@@ -84,7 +84,7 @@ Once I was confident in the functionality of my design, I created an incomplete 
 - **Journey planner**-a new service that enables users to plan a trip to/from a destination on public transit, purchase any necessary passes/tickets for the trip, and add it to their calendar in advance
 - **Privacy protection**-all users can now choose to accept or decline location services, declining only alters access to features which require location tracking
 
-{:video.full}
+{video.full}
 ![High-fidelity interface](/video/full/transit5.mp4)
 ###### An example interaction from the final prototype
 
