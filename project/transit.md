@@ -28,7 +28,7 @@ Based on preliminary research on Chicago transit ridership, I identified my main
 
 1. **Suburban Commuters**—Regular users who primarily ride the Metra train, these users choose public transportation out of convenience and likely use it only to travel to and from work 
 2. **Chicago Natives**—Regular users who live downtown, these users are more likely to use the CTA and Pace buses for all their transportation needs within the city
-3. **Tourists and Occasional Riders**—These users are visitng Chicago for a brief time or only use public transportation on occassion, they primarily rely on the 'L' train to see the city or go to leisure events
+3. **Tourists and Occasional Riders**—These users are visiting Chicago for a brief time or only use public transportation on occasion, they primarily rely on the 'L' train to see the city or go to leisure events
 
 ### Motivations
 I also synthesized users primary motivations for using the mobile app from the UX interviews for its intial release in 2015:
@@ -53,7 +53,7 @@ First, I used my research to establish three distinct personas which capture the
 ### Personas
 1. **Stan Lewinsky**–is a wealthy middle-aged suburban businessman who voluntarily rides the Metra to work
 2. **Monica Ogilvy**–is a young Chicago native and nurse on the South Side who regularly uses CTA and Pace buses 
-3. **Lucas and Marcia Oliveira**– are visiting Chicago for two weeks with their young children; they the ‘L’ and CTA buses to visit tourist destinations. 
+3. **Lucas and Marcia Oliveira**– are visiting Chicago for two weeks with their young children; they use the ‘L’ and CTA buses to visit tourist destinations. 
 
 Based on these personas and the user motivations from my research, I created informal user flows for each task one might wish to complete with the app. I used these user flows to determine the information architecture of the app.
 
