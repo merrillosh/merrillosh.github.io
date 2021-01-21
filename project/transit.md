@@ -63,7 +63,7 @@ Based on these personas and the user motivations from my research, I created inf
 ###### The fully expanded information architecture for the app (zoom for a closer look)
 
 
-# Proof of concept & Usability Testing
+# Proof of Concept & Usability Testing
 Over several weeks, I worked with this information architecture and my user pain points to produce low-fidelty wireframes for some of the most important app screens and linked them into a very basic interactive prototype. 
 
 I conducted informal usability testing by asking individual Chicago Transit riders to complete some of the aforementioned tasks such as creating a Ventra account, checking transit times on a regular route, and adding transit value to an existing Ventra card and recording the time they took to complete the task as well as the number of incorrect clicks they made. Additionally, I asked users which additional features, if any, made their transportation experience more convenient or more confusing. 
