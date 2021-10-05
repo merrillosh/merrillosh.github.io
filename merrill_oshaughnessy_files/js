@@ -74,7 +74,7 @@ var offset = $(".meterCounter").offset().top;
 var pageHeight = $(document).height() - offset - $(window).height();
 
 // calculate how many pixels user should scroll until html changes:
-var count = 150,
+var count = 5,
 		divide = pageHeight / count;
 
 $(document).scroll(function(e){
