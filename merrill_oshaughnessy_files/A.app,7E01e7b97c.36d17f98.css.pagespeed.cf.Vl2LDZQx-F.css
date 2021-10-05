@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'brandon_grotesqueregular';
-  src:url(../merrill_oshaughnessy_files/webfontkit-20211004-133615/brandon_reg-webfont.woff) format('woff'),
+  src:url(../merrill_oshaughnessy_files/fonts/brandon_grotesque_family/brandon_reg-webfont.woff) format('woff'),
        url(../merrill_oshaughnessy_files/webfontkit-20211004-133615/brandon_reg-webfont.woff2) format('woff2');
   font-weight: normal;
   font-style: normal;
@@ -8,7 +8,7 @@
 
 @font-face {
   font-family: 'brandon_grotesquemedium';
-  src:url(../merrill_oshaughnessy_files/webfontkit-20211004-133615/brandon_med-webfont.woff) format('woff'),
+  src:url(../merrill_oshaughnessy_files/fonts/brandon_grotesque_family/brandon_med-webfont.woff) format('woff'),
        url(../merrill_oshaughnessy_files/webfontkit-20211004-133615/brandon_med-webfont.woff2) format('woff2');
   font-weight: normal;
   font-style: normal;
@@ -16,7 +16,7 @@
 
 @font-face {
   font-family: 'brandon_grotesquebold';
-  src: url(../merrill_oshaughnessy_files/webfontkit-20211004-133615/brandon_bld-webfont.woff) format('woff'),
+  src: url(../merrill_oshaughnessy_files/fonts/brandon_grotesque_family/brandon_bld-webfont.woff) format('woff'),
        url(../merrill_oshaughnessy_files/webfontkit-20211004-133615/brandon_bld-webfont.woff2) format('woff2');
   font-weight: normal;
   font-style: normal;
@@ -25,7 +25,7 @@
 
 @font-face {
   font-family: 'louizeregular';
-  src: url(../merrill_oshaughnessy_files/webfontkit-20211004-215323/louize-webfont.woff2) format('woff2'),
+  src: url(../merrill_oshaughnessy_files/fonts/louize_family/louize-webfont.woff2) format('woff2'),
        url(../merrill_oshaughnessy_files/webfontkit-20211004-215323/louize-webfont.woff) format('woff');
   font-weight: normal;
   font-style: normal;
