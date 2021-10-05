@@ -9,7 +9,7 @@ var $focusableInNav,
     $lastFocusableElement;
 
 $(document).ready(function() {
-  $hamburgerMenuBtn = $("#hamburger-menu"),
+  $hamburgerMenuBtn = $("#Menu-Button"),
     $slideNav = $("#slide-nav"),
     $closeBtn = $("#close"),
     $main = $("main"),
