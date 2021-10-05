@@ -32,13 +32,16 @@
 
 }
 
+.slide-content {
+  visibility: hidden;
+}
 
 .visible {
   visibility: visible;
 }
 
 .active {
-  width: 250px;
+  width: 100vw;
 }
 
 
