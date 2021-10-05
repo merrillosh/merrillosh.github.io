@@ -53,8 +53,12 @@
 .slide-content .close-btn {
   position: absolute;
   top: 0;
-  right: 10vw;
+  right: 2rem;
   margin-left: 49vw;
+  top:-1.75rem;
+  z-index:999;
+  display:block;
+  background-color:rgba(0,0,0,0)
 }
 
 .visible {
