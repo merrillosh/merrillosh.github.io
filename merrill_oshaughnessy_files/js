@@ -71,17 +71,13 @@ function moveFocusToBottom(e) {
 
 // calculate page height (keeping element position in mind):
 var offset = $(".meterCounter").offset().top;
-var pageHeight = $(document).height() - offset - $(window).height();
-
-// calculate how many pixels user should scroll until html changes:
-var count = 6,
-  divide = pageHeight * 6 / count;
+var scrollDist = ($(document).height() - 0.2245*$(window).width())/5;
 
 $(document).scroll(function(e){
+
 		console.log(e);
-    var scrollPosition = $(window).scrollTop(),
-    		relevantToHeight = scrollPosition*count/pageHeight ;
+    		var relevantToHeight = 1 + ($(window).scrollTop())/(($(document).height() - 0.02245*$(window).width())/5);
 
     // (magic if statement here that determines when html should change)
-        $(".number").html(count - Math.round(relevantToHeight));
+        $(".number").html(Math.round(relevantToHeight));
 });
