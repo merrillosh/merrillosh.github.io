@@ -33,7 +33,13 @@
 }
 
 
+.visible {
+  visibility: visible;
+}
 
+.active {
+  width: 250px;
+}
 
 
 
