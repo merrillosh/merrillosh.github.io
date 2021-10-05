@@ -39,6 +39,7 @@
   z-index: 1;
   top: 0;
   left: 0;
+  background-color: #ECE5DF;
   overflow-x: hidden;
   transition: width 0.5s;
   padding-top: 60px;
@@ -52,9 +53,8 @@
 .slide-content .close-btn {
   position: absolute;
   top: 0;
-  right: 25px;
-  font-size: 36px;
-  margin-left: 50px;
+  right: 10vw;
+  margin-left: 49vw;
 }
 
 .visible {
