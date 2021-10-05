@@ -1,0 +1,4 @@
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return (_vm.kirby.page.template == "index")?_c('main',{attrs:{"id":"Illustration"}},[_vm._l((_vm.kirby.page.children),function(page){return _c('router-link',{directives:[{name:"show",rawName:"v-show",value:(page.visible),expression:"page.visible"}],key:page.uid,attrs:{"to":page.uri}},[_c('figure',[_c('img',{attrs:{"srcset":page.strings.coversrcset,"sizes":"90vw"}})]),_c('dl',[_c('dt',[_c('h3',{domProps:{"innerHTML":_vm._s(page.strings.title)}}),_c('h4',{domProps:{"innerHTML":_vm._s(page.strings.year)}})]),_c('dd',[_c('small',{domProps:{"innerHTML":_vm._s(page.strings.credits)}})])]),_c('article',{domProps:{"innerHTML":_vm._s(page.strings.description)}})])}),_c('footerbar')],2):_vm._e()}
+var staticRenderFns = []
+
+export { render, staticRenderFns }

@@ -1,0 +1,4 @@
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('section',[_c('transition',{attrs:{"name":"basic"}},[_c('router-view',{attrs:{"name":"carousel","fresh":_vm.fresh}})],1),_c('section',{attrs:{"id":"Content"}},[_c('keep-alive',[_c('router-view',{attrs:{"name":"navigation","from":_vm.from}})],1),_c('slidetransitions',[(_vm.$route.meta.keepAlive)?_c('keep-alive',[_c('router-view',{key:_vm.kirby.page.uid,attrs:{"name":"main"}})],1):_c('router-view',{key:_vm.kirby.page.uid,attrs:{"name":"main"}})],1)],1)],1)}
+var staticRenderFns = []
+
+export { render, staticRenderFns }

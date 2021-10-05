@@ -1,0 +1,4 @@
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('scroller',{attrs:{"id":"MenuScroller","bound":false}},[(_vm.kirby.page.template)?_c('nav',{staticClass:"projects",attrs:{"id":"Navigation"}},[_c('masthead',[_c('close',{attrs:{"from":_vm.from}}),(_vm.isDetailPage)?_c('router-link',{staticClass:"prev arrow",attrs:{"to":_vm.urltopath(_vm.pageFromURI(_vm.kirby.page.prev, _vm.kirby.pages).url)}},[_c('arrow',{attrs:{"direction":"left","bar":true}})],1):_vm._e(),(_vm.isDetailPage)?_c('router-link',{staticClass:"next arrow",attrs:{"to":_vm.urltopath(_vm.pageFromURI(_vm.kirby.page.next, _vm.kirby.pages).url)}},[_c('arrow',{attrs:{"direction":"right","bar":true}})],1):_vm._e()],1),_c('nav',{staticClass:"detail",attrs:{"id":"Left"}},[_c('backtotop')],1),_c('nav',{staticClass:"detail",attrs:{"id":"Right"}},[_c('h4',[_c('counter')],1)])],1):_vm._e()])}
+var staticRenderFns = []
+
+export { render, staticRenderFns }

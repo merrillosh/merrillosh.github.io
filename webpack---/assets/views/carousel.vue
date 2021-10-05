@@ -1,0 +1,4 @@
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return (_vm.kirby.page.template == "featured" && _vm.fresh)?_c('section',[_c('div',{on:{"click":function($event){return _vm.scrollDown()}}},_vm._l((_vm.kirby.pages.home.content.carousel),function(slide,index){return _c('figure',{key:slide.id},[_c('transition',{attrs:{"name":"slow"}},[_c('srcset',{directives:[{name:"show",rawName:"v-show",value:(_vm.timeToShow(index)),expression:"timeToShow(index)"}],attrs:{"file":_vm.kirby.pages.home.files[slide.image[0].value],"sizes":"45vw"}})],1)],1)}),0),_c('monogram',{style:({ opacity: _vm.readyToGo }),attrs:{"id":"Monogram"}})],1):_vm._e()}
+var staticRenderFns = []
+
+export { render, staticRenderFns }
