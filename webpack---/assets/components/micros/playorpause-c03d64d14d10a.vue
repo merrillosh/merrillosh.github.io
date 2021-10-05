@@ -1,4 +1,0 @@
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('figure',[_c('svg',{directives:[{name:"show",rawName:"v-show",value:(_vm.paused),expression:"paused"}],staticClass:"play",attrs:{"x":"0px","y":"0px","viewBox":"0 0 18 21"}},[_c('polygon',{attrs:{"points":"18,10.5 0,21 0,0 \t"}})]),_c('svg',{directives:[{name:"show",rawName:"v-show",value:(!_vm.paused),expression:"!paused"}],staticClass:"pause",attrs:{"x":"0px","y":"0px","viewBox":"0 0 12 21"}},[_c('rect',{staticClass:"st0",attrs:{"width":"2.2","height":"21"}}),_c('rect',{attrs:{"x":"9.8","width":"2.2","height":"21"}})])])}
-var staticRenderFns = []
-
-export { render, staticRenderFns }
