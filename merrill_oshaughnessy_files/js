@@ -70,6 +70,15 @@ function moveFocusToBottom(e) {
   }
 }
 
+//topbutton = document.getElementById("topBtn");
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+
+
 //Home Rolling Counter
 
 // calculate page height (keeping element position in mind)
@@ -81,6 +90,16 @@ $(document).scroll(function(e){
 
     // (magic if statement here that determines when html should change)
         $(".number").html(Math.round(relevantToHeight));
+})
+
+// project page scroller
+$(document).scroll(function(e){
+
+  console.log(e);
+      var relevantToHeight = 1 + ($(window).scrollTop())/(($(document).height() - 0.02245*$(window).width())/19);
+
+  // (magic if statement here that determines when html should change)
+      $(".number_eadem").html(Math.round(relevantToHeight));
 })
 
 //Work Gallery Filters
