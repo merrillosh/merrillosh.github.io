@@ -96,10 +96,10 @@ $(document).scroll(function(e){
 $(document).scroll(function(e){
 
   console.log(e);
-      var relevantToHeight = 1 + ($(window).scrollTop())/(($(document).height() - 0.02245*$(window).width())/19);
+      var relevantToHeight = 1 + ($(window).scrollTop())/(($(document).height() - 0.02245*$(window).width())/6);
 
   // (magic if statement here that determines when html should change)
-      $(".number_eadem").html(Math.round(relevantToHeight));
+      $(".number_sacredground").html(Math.round(relevantToHeight));
 })
 
 //Work Gallery Filters
