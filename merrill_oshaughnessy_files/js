@@ -86,7 +86,7 @@ function topFunction() {
 $(document).scroll(function(e){
 
 		console.log(e);
-    		var relevantToHeight = 1 + ($(window).scrollTop())/(($(document).height() - 0.02245*$(window).width())/5);
+    		var relevantToHeight = 1 + ($(window).scrollTop())/(($(document).height() - 0.02245*$(window).width())/6);
 
     // (magic if statement here that determines when html should change)
         $(".number").html(Math.round(relevantToHeight));
@@ -188,4 +188,13 @@ document.getElementById('filter--web-development').addEventListener("click", fun
 document.getElementById('filter--packaging').addEventListener("click", function() {
   filterSelection("tag--packaging");
 }, false);
+
+document.getElementById('filter--mobile').addEventListener("click", function() {
+  filterSelection("tag--mobile");
+}, false);
+
+document.getElementById('filter--UX').addEventListener("click", function() {
+  filterSelection("tag--UX");
+}, false);
+
 
