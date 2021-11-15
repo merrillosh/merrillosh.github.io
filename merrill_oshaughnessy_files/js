@@ -198,3 +198,31 @@ document.getElementById('filter--UX').addEventListener("click", function() {
 }, false);
 
 
+// Hover states
+
+var body = document.body;
+
+function addClass(element, nameOfClass) {
+	if (element.classList) {
+ 		element.classList.add(nameOfClass);
+	}
+	else {
+		var regExp = new RegExp('(\\s|^)' + nameOfClass + '(\\s|$)');
+		if (!element.className.match(regExp)) {
+			element.className += " " + nameOfClass;
+		}
+	}
+}
+
+function removeClass(element, nameOfClass) {
+	if (element.classList) {
+		element.classList.remove(nameOfClass);
+	}
+	else {
+		var regExp = new RegExp('(\\s|^)' + nameOfClass + '(\\s|$)');
+		if (element.className.match(regExp)) {
+			element.className.replace(regExp, ' ');
+		}
+	}
+}
+

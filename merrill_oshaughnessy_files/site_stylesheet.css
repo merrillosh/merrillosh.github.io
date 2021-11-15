@@ -114,9 +114,34 @@ html{
 }
  
 
-.about-pic img{-webkit-filter:grayscale(100%);-moz-filter:grayscale(100%);filter:grayscale(100%);-webkit-transition:all 1s ease !important;-o-transition:all 1s ease !important;transition:all 1s ease !important}
-.about-pic:hover img{-webkit-filter:grayscale(0);-moz-filter:grayscale(0);filter:grayscale(0)}
+/*.about-pic img{-webkit-filter:grayscale(100%);-moz-filter:grayscale(100%);filter:grayscale(100%);-webkit-transition:all 1s ease !important;-o-transition:all 1s ease !important;transition:all 1s ease !important}
+.about-pic:hover img{-webkit-filter:grayscale(0);-moz-filter:grayscale(0);filter:grayscale(0)}*/
 
+
+.note span  {
+  box-shadow: inset 0px 0px 0px 0px orangered;
+
+  @media (prefers-color-scheme: dark) {
+    box-shadow: inset 0px 0px 0px 0px black;
+  }
+}
+
+.footnote-accent span {
+  box-shadow: inset 0px -25px 0px 0px orangered;
+
+  @media (prefers-color-scheme: dark) {
+    box-shadow: inset 0px -25px 0px 0px black;
+  }
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 10px 1fr;
+  grid-template-rows: repeat(5, auto);
+  grid-column-gap: 8px;
+  grid-row-gap: 8px;
+  align-items: start;
+}
 
 
 

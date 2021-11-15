@@ -13,11 +13,22 @@
 
  <link href="./site_stylesheet.css" rel="stylesheet">
  <style>
-     .fn, .symbol {
+     .fn, .accent {
          font-family: 'louizeregular';
          text-decoration: none;
          color: orangered;
      }
+
+     .superscript {
+        vertical-align: super;
+        font-size: 0.8em;
+     }
+
+     .infn {
+        font-size: 1.5em;
+     }
+
+
  </style>
 
  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -64,12 +75,12 @@
             <div>
                 <section class="folio"><!---->
                     <div class="page">
-                        <div class="body" style="line-height:1.3;">
+                        <div class="body" style="line-height:1.5;">
                             <p><strong>Merrill O'Shaughnessy</strong> &mdash;<br><br> Multidisciplinary designer. I approach every project with empathy, experimentation, and an eye for the delightfully unusual.<br><br>
         
-                            I'm currently studying Human-centered Design and Informatics<a href="#fn1" id="ref1" class="fn">*</a> at Duke University and I intend to graduate with my B.A. in December 2022. Right now I'm focused on expanding my design skillset and applying both my passion for big-picture creative strategy and hands-on visual design work as a Creative Director and UX Designer at <a href="http://www.pitchstorylab.com">PITCH Storylab</a>, a student powered marketing agency. Previously, I interned at Mastercard as a UX Designer, rethinking some of their widest-reaching employee-facing tools, and worked at <a href="https://www.codeplatoon.org/">Code Platoon</a>, teaching full-stack web development<sup><a href="#fn2" id="ref2" class="fn">†</a></sup>.
+                            I'm currently studying Human-centered Design and Informatics<span class="accent fn" id="accent1" onmouseover="addClass(fn1, 'footnote-accent');" onmouseout="removeClass(fn1, 'footnote-accent');">*</span> at Duke University and I intend to graduate with my B.A. in December 2022. Right now I'm focused on expanding my design skillset and applying both my passion for big-picture creative strategy and hands-on visual design work as a Creative Director and UX Designer at <a href="http://www.pitchstorylab.com">PITCH Storylab</a>, a student powered marketing agency. Previously, I interned at Mastercard as a UX Designer, rethinking some of their widest-reaching employee-facing tools, and worked at <a href="https://www.codeplatoon.org/">Code Platoon</a>, teaching full-stack web development<span class="accent superscript fn" id="accent2" onmouseover="addClass(fn2, 'footnote-accent');" onmouseout="removeClass(fn2, 'footnote-accent');">†</span>.
                             <br><br>
-                            I grew up just outside of Chicago<sup><a href="#fn3" id="ref3" class="fn">‡</a></sup>, make a lot of self deprecating jokes<sup><a href="#fn4" id="ref4" class="fn">§</a></sup>, and enjoy getting my hands dirty exploring every step of the design process. I spend my free time drooling over beautiful packaging, clipping illustrations from newspapers, and raising a jungle of indoor plants<sup><a href="#fn5" id="re5" class="fn">¶</a></sup>.
+                            I grew up just outside of Chicago<span class="accent superscript fn" id="accent3" onmouseover="addClass(fn3, 'footnote-accent');" onmouseout="removeClass(fn3, 'footnote-accent');">‡</span>, make a lot of self deprecating jokes<span class="accent superscript fn" id="accent4" onmouseover="addClass(fn4, 'footnote-accent');" onmouseout="removeClass(fn4, 'footnote-accent');">§</span>, and enjoy getting my hands dirty exploring every step of the design process. I spend my free time drooling over beautiful packaging, clipping illustrations from newspapers, and raising a jungle of indoor plants<span class="accent superscript fn" id="accent5" onmouseover="addClass(fn5, 'footnote-accent');" onmouseout="removeClass(fn5, 'footnote-accent');">¶</span>.
                             <br><br>
                             Presently, I'm seeking internship opportunities in UX and Brand Identity Design for summer 2022.
                             </p>
@@ -83,24 +94,21 @@
                     </div>
                     <div class="figure+footnotes">
 
-                        <figure data-v-70dd9862="" style="width: calc(100vw - 57rem);"><div data-v-08e8faef="" data-v-70dd9862=""  class="transition about-pic"><img data-v-08e8faef="" src="./Images/about_pic.jpeg" class="v-lazy-image v-lazy-image-loaded" sizes="50vw" ></div></figure>
+                        <figure data-v-70dd9862="" style="width: calc(100vw - 57rem);"><div data-v-08e8faef="" data-v-70dd9862=""  class="transition about-pic"><img data-v-08e8faef="" src="./Images/about_pic_cropped.jpeg" class="v-lazy-image v-lazy-image-loaded" sizes="50vw" ></div></figure>
 
-                        <br><hr style="height: 1.5px; border:none; color:black; background-color: black; width: 98%; float: left; margin-top:0.3rem;"><br>
-                        <p>
-                        <b id="fn1" class="symbol">*</b> This isn't your typical major or double major but an interdisciplinary academic program<br> &nbsp;&nbsp; I designed and proposed myself.<!---<a href="#ref1" class="fn" title="Jump back to footnote 1 in the text.">↩</a>---><br><div style="height:0.5rem"><br></div></p>
+                        <br><hr style="height: 1.5px; border:none; color:black; background-color: black; width: 100%; float: left; margin-top:0.3rem;"><br>
 
-                        <p>
-                        <b id="fn2" class="symbol">†</b> Here's my <a href="../merrill_oshaughnessy_files/Merrill-O'Shaughnessy-WebResume.pdf">resume</a> if you need it.<!---<a href="#ref2" class="fn" title="Jump back to footnote 2 in the text.">↩</a>---><br><div style="height:0.5rem"><br></div></p>
+                        <div class="grid">
+                        <span class="accent infn">*</span><p class="note" id="fn1"><span> This isn't your typical major or double major but an interdisciplinary academic program I designed <br>and proposed myself.<!---<a href="#ref1" class="fn" title="Jump back to footnote 1 in the text.">↩</a>---></span></p>
 
-                        <p>
-                        <b id="fn3" class="symbol">‡</b> But I tell people I'm from Chicago like everyone else from the 'burbs.<!---<a href="#ref3" class="fn" title="Jump back to footnote 2 in the text.">↩</a>---><br><div style="height:0.5rem"><br></div></p>
+                        <span class="accent infn">†</span><p class="note" id="fn2"><span>Here's my <a href="../merrill_oshaughnessy_files/Merrill-O'Shaughnessy-WebResume.pdf">resume</a> if you need it.<!---<a href="#ref2" class="fn" title="Jump back to footnote 2 in the text.">↩</a>---></span></p>
 
-                        <p>
-                        <b id="fn4" class="symbol">§</b> I don't get away with these as well as I'd like on the East coast.<!---<a href="#ref4" class="fn" title="Jump back to footnote 2 in the text.">↩</a>---><br><div style="height:0.5rem"><br></div></p>
+                        <span class="accent infn">‡</span><p class="note" id="fn3"><span>But I tell people I'm from Chicago like everyone else from the 'burbs.<!---<a href="#ref3" class="fn" title="Jump back to footnote 2 in the text.">↩</a>---></span></p>
 
-                        <p>
-                        <b id="fn5" class="symbol">¶</b> If you've gotten this far and are still interested in getting to know me better, connect <br>&nbsp;&nbsp;&nbsp; with me on <a href="https://www.linkedin.com/in/merrill-oshaughnessy/" target="_blank" >LinkedIn</a>, or better yet, send me an <a href="mailto:oshaughnessy.merrill@gmail.com" target="_blank" title="mailto:oshaughnessy.merrill@gmail.com" rel="noopener noreferrer nofollow">email</a>.<!---<a href="#ref5" class="fn" title="Jump back to footnote 2 in the text.">↩</a>---><br><div style="height:0.5rem"><br></div>
-                        </p>
+                        <span class="accent infn">§</span><p class="note" id="fn4"><span>I don't get away with these as well as I'd like on the East coast.<!---<a href="#ref4" class="fn" title="Jump back to footnote 2 in the text.">↩</a>---></span></p>
+
+                        <span class="accent infn">¶</span><p class="note" id="fn5"><span>If you've gotten this far and are still interested in getting to know me better, connect with me on <a href="https://www.linkedin.com/in/merrill-oshaughnessy/" target="_blank" >LinkedIn</a>, or better yet, send me an <a href="mailto:oshaughnessy.merrill@gmail.com" target="_blank" title="mailto:oshaughnessy.merrill@gmail.com" rel="noopener noreferrer nofollow">email</a>.<!---<a href="#ref5" class="fn" title="Jump back to footnote 2 in the text.">↩</a>---></span></p>
+                        </div>
                     </div>
 
     <!----></section></div></section>
