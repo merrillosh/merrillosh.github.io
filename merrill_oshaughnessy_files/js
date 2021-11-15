@@ -86,7 +86,7 @@ function topFunction() {
 $(document).scroll(function(e){
 
 		console.log(e);
-    		var relevantToHeight = 1 + ($(window).scrollTop())/(($(document).height() - 0.02245*$(window).width())/6);
+    		var relevantToHeight = 1 + ($(window).scrollTop())/(($(document).height() - 0.02245*$(window).width())/3);
 
     // (magic if statement here that determines when html should change)
         $(".number").html(Math.round(relevantToHeight));
@@ -169,11 +169,7 @@ document.getElementById('filter--show-all').addEventListener("click", function()
   filterSelection("all");
 }, false);
 
-document.getElementById('filter--logos').addEventListener("click", function() { 
-  filterSelection("tag--logos");
-}, false);
-
-document.getElementById('filter--identity').addEventListener("click", function() {
+document.getElementById('filter--identity').addEventListener("click", function() { 
   filterSelection("tag--identity");
 }, false);
 
@@ -181,20 +177,24 @@ document.getElementById('filter--illustration').addEventListener("click", functi
   filterSelection("tag--illustration");
 }, false);
 
-document.getElementById('filter--web-development').addEventListener("click", function() { 
-  filterSelection("tag--web-development");
+document.getElementById('filter--uxdesign').addEventListener("click", function() {
+  filterSelection("tag--uxdesign");
 }, false);
 
-document.getElementById('filter--packaging').addEventListener("click", function() {
-  filterSelection("tag--packaging");
+document.getElementById('filter--uxresearch').addEventListener("click", function() { 
+  filterSelection("tag--uxresearch");
+}, false);
+
+document.getElementById('filter--web').addEventListener("click", function() {
+  filterSelection("tag--web");
 }, false);
 
 document.getElementById('filter--mobile').addEventListener("click", function() {
   filterSelection("tag--mobile");
 }, false);
 
-document.getElementById('filter--UX').addEventListener("click", function() {
-  filterSelection("tag--UX");
+document.getElementById('filter--case').addEventListener("click", function() {
+  filterSelection("tag--case");
 }, false);
 
 
