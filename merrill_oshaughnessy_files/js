@@ -102,6 +102,15 @@ $(document).scroll(function(e){
       $(".number_sacredground").html(Math.round(relevantToHeight));
 })
 
+$(document).scroll(function(e){
+
+  console.log(e);
+      var relevantToHeight = 1 + ($(window).scrollTop())/(($(document).height() - 0.02245*$(window).width())/7);
+
+  // (magic if statement here that determines when html should change)
+      $(".number_choosewell").html(Math.round(relevantToHeight));
+})
+
 //Work Gallery Filters
 
 //Store a function that loops through .process-step element and shows it
