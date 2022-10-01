@@ -1,11 +1,3 @@
-@keyframes page-load {
-  from {
-      background-color: #5222ff;
-  }
-  to {
-      background-color: #ffffff;
-  }
-}
 
 body {
   animation: fadeInAnimation ease 3s;
@@ -21,16 +13,3 @@ body {
   }
 }
 
-.page-loading::before {
-  content:" ";
-  display:block;
-  position:fixed;
-  z-index:10;
-  height:2px;
-  width:100%;
-  top:0;
-  left:0;
-  background-color:#06D;
-  animation: page-load infinite ease-out 9s;
-  box-shadow:0 2px 2px rgba(0,0,0,.2);
-}
