@@ -227,6 +227,10 @@ a:after {
   padding-top: 5rem;
 }
 
+.more-projects-text {
+  padding-left: 1.667rem;
+}
+
 #section-projects {
   padding-top: 16.722rem;
   margin-top: 0rem;
@@ -275,6 +279,11 @@ a:after {
   flex-basis: calc(100% / 12 * 3);
 }
 
+.img-only {
+  padding-bottom:2.667rem;
+  padding-top: 0;
+}
+
 .background-img {
   background-image: url(https://verenamichelitsch.com/wp-content/uploads/2022/02/gossamer_v7_front_and_back.png);
   background-repeat: no-repeat;
@@ -303,9 +312,9 @@ a:after {
 
 .image-container img {
   display: block;
-  width: 100px;
+  width: 100%;
   max-width: 100%;
-  height: auto;
+  height: 100%;
   object-fit: cover;
 }
 
@@ -313,7 +322,7 @@ a:after {
     display: block;
     width: 100%;
     max-width: 100%;
-    height: auto;
+    height: 100%;
     object-fit: cover;
 }
 
