@@ -333,7 +333,7 @@ a:after {
   background: rgba(57, 57, 57, 0.25);
   top: 0;
   left: 0;
-  transition: opacity 0.5s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
   opacity: 0;
   color: #fff;
   display: flex;
@@ -341,7 +341,12 @@ a:after {
   justify-content: center;
 }
 
-.image-gallery li:hover .overlay {
+.img-column {
+  position: relative;
+  width: 100%;
+}
+
+.img-column:hover .overlay {
   opacity: 1;
 }
 
