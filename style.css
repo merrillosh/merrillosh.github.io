@@ -101,12 +101,13 @@ a:after {
   margin-right: auto;
   margin-left: auto;
   padding: 0 1.667rem;
-  padding-top: 0.1667rem;
+  padding-top: 1.667rem;
   margin-top: 1.389rem;
   font-size: 0.667rem; 
   line-height: 0.833rem; 
   padding-right: 1.66667rem;
 }
+
 
 .cover-container {
   width: 100%;
@@ -123,7 +124,7 @@ a:after {
   width: 100%;
   margin-right: auto;
   margin-left: auto;
-  padding: 0 1.667rem;
+  padding: 0 0.667rem;
 }
 
 .row {
@@ -189,16 +190,41 @@ a:after {
   flex-basis: calc(100% / 12 * 2);
 }
 
+.small-column {
+  margin-top: 0;
+  padding-left: 8px;
+  width: calc(100% / 12 * 3.5);
+  max-width: calc(100% / 12 * 3.5);
+  flex: 0 0 auto;
+  flex-basis: calc(100% / 12 * 3.5);
+}
+
 .medium-column {
-  padding-left: 4px;
+  padding-left: 8px;
   width: calc(100% / 12 * 5);
   max-width: calc(100% / 12 * 5);
   flex: 0 0 auto;
   flex-basis: calc(100% / 12 * 5);
 }
 
+.wide-column {
+  padding-left: 8px;
+  width: calc(100% - (100% / 12 * 3.5) - 8px);
+  max-width: calc(100% - (100% / 12 * 3.5) - 8px);
+  flex: 0 0 auto;
+  flex-basis: calc(100% - (100% / 12 * 3.5) - 8px);;
+}
+
+.photo-column {
+  width: calc(100% / 12 * 4);
+  max-width: calc(100% / 12 * 4);
+  flex: 0 0 auto;
+  flex-basis: calc(100% / 12 * 4);
+}
+
 .content-row {
   justify-content: center;
+  padding-top: 5rem;
 }
 
 #section-projects {
@@ -268,36 +294,27 @@ a:after {
 
 /* Gallery CSS */
 
-.image-gallery {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  padding-inline-start: 0px;
-  list-style-type: none;
+.image-container {
+  display: grid;
+  grid-gap: 0.555rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-auto-flow: dense;
 }
 
-.image-gallery > li {
-  height: 500px;
-  cursor: pointer;
-  position: relative;
-}
-
-.image-gallery li img {
-  object-fit: cover;
+.image-container img {
+  display: block;
+  width: 100px;
   max-width: 100%;
-  width: 100%;
-  height: 100%;
-  vertical-align: middle;
-  border-radius: 0px;
+  height: auto;
+  object-fit: cover;
 }
 
-.image-gallery > li {
-  flex: 1 1 auto;
-}
-
-.image-gallery::after {
-  content: "";
-  flex-grow: 999;
+.content-row img {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
 }
 
 .overlay {
