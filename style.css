@@ -147,7 +147,6 @@ a:after {
   display: block;
   right: 0.722rem;
   margin: 0;
-  height: 100%;
 }
 
 .column {
@@ -193,10 +192,10 @@ a:after {
 .small-column {
   margin-top: 0;
   padding-left: 8px;
-  width: calc(100% / 12 * 3.5);
-  max-width: calc(100% / 12 * 3.5);
+  width: calc(100% / 12 * 3);
+  max-width: calc(100% / 12 * 3);
   flex: 0 0 auto;
-  flex-basis: calc(100% / 12 * 3.5);
+  flex-basis: calc(100% / 12 * 3);
 }
 
 .medium-column {
@@ -205,6 +204,14 @@ a:after {
   max-width: calc(100% / 12 * 5);
   flex: 0 0 auto;
   flex-basis: calc(100% / 12 * 5);
+}
+
+.large-column {
+  padding-left: 8px;
+  width: calc(100% / 12 * 7);
+  max-width: calc(100% / 12 * 7);
+  flex: 0 0 auto;
+  flex-basis: calc(100% / 12 * 7);
 }
 
 .wide-column {
@@ -232,7 +239,7 @@ a:after {
 }
 
 #section-projects {
-  padding-top: 16.722rem;
+  padding-top: 1.722rem;
   margin-top: 0rem;
   margin-right: 0rem;
   padding-bottom: 0rem;
@@ -281,11 +288,11 @@ a:after {
 
 .img-only {
   padding-bottom:2.667rem;
-  padding-top: 0;
+  padding-top: 0 !important;
 }
 
 .background-img {
-  background-image: url(https://verenamichelitsch.com/wp-content/uploads/2022/02/gossamer_v7_front_and_back.png);
+  background-image: url(images/project1-img/project1-cover.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 50%;
@@ -304,6 +311,7 @@ a:after {
 /* Gallery CSS */
 
 .image-container {
+  padding-top: 20vw;
   display: grid;
   grid-gap: 0.555rem;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -319,11 +327,11 @@ a:after {
 }
 
 .content-row img {
-    display: block;
-    width: 100%;
-    max-width: 100%;
-    height: 100%;
-    object-fit: cover;
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .overlay {
@@ -348,6 +356,41 @@ a:after {
 
 .img-column:hover .overlay {
   opacity: 1;
+}
+
+/* carousel */
+
+.carousel-cell {
+  /* aspect ration: 1920 x 1309 */
+  width: 100%;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.carousel-cell img {
+  width: 100%;
+  height: auto;
+}
+
+.flickity-button {
+  background: transparent;
+  color: black;
+  width: 30px;
+}
+
+.flickity-button:hover {
+  background: transparent;
+}
+
+.flickity-prev-next-button.previous {
+  left: -60px;
+}
+.flickity-prev-next-button.next {
+  right: -60px;
+}
+
+.flickity-page-dots {
+  display: none;
 }
 
 /* CV/Contact*/
@@ -415,10 +458,15 @@ a:after {
   url("fonts/BasisGrotesque-Light.ttf") format("truetype");
 }
 
+@media screen and (min-width: 1169.99px) {
+  .image-container {
+    padding-top: 30vw;
+  }
+}
 
 @media screen and (min-width: 922px) and (max-width: 1169.98px) {
   .content-container {
-    padding-top: 6.667rem;
+    padding-top: 10.667rem;
   }
 }
 
@@ -449,6 +497,7 @@ a:after {
 
   .image-container{
     width: inherit;
+    padding-top: 2.667rem;
   }
 
   .column {
@@ -464,6 +513,7 @@ a:after {
   }
 
   #section-footer {
-    padding-left: 0px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 }
