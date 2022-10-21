@@ -149,6 +149,8 @@ a:after {
   margin: 0;
 }
 
+/* Column Width Layout Options */
+
 .column {
   display: flex;
   flex-direction: row;
@@ -229,6 +231,8 @@ a:after {
   flex-basis: calc(100% / 12 * 4);
 }
 
+/******/
+
 .content-row {
   justify-content: center;
   padding-top: 5rem;
@@ -256,11 +260,11 @@ a:after {
   width: 100%;
 }
 
-#section-name {
+.section-name {
+  z-index: 999;
   white-space: nowrap; 
   position: fixed;
   animation: slideInAnimation ease-in 0.5s;
-  /*animation: fadeInAnimation ease-in 0.5s;*/
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
 }
@@ -289,21 +293,6 @@ a:after {
 .img-only {
   padding-bottom:2.667rem;
   padding-top: 0 !important;
-}
-
-.background-img {
-  background-image: url(images/project1-img/project1-cover.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 50% 50%;
-  background-attachment: scroll;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  overflow: hidden;
-  top: 0;
-  left: 0;
-  right: 0;
 }
 
 
@@ -437,6 +426,8 @@ a:after {
 
 
 
+
+
 @font-face {
   font-family: "basis-grotesque-bold";
   src: url("fonts/BasisGrotesque-Bold.woff") format("woff"),
@@ -515,5 +506,9 @@ a:after {
   #section-footer {
     padding-left: 10px;
     padding-right: 10px;
+  }
+
+  .page-title {
+    display: none;
   }
 }

@@ -2,3 +2,25 @@
   padding:  4.5rem;
 }
 
+.scroll-site {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  max-width: 830px;
+  max-height: calc(830px*(5311/1060));
+}
+
+.scroll-site img {
+  width: 70vw;
+  height: calc(70vw*(5311/1060));
+  max-width: 830px;
+  max-height: calc(830px*(5311/1060));
+}
+
+@media screen and (min-width: 0) and (max-width: 544px) {
+  .scroll-site {
+    height: auto;
+    max-height: none;
+    max-width: none;
+  }
