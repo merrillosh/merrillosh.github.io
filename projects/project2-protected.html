@@ -85,6 +85,7 @@
         }
         
         #invalidPass {
+            display: none;
             color: white;
         }
         
@@ -93,15 +94,17 @@
         }
 
         #securecontext {
+            display: none;
             padding-top: 60px;
-            color: #BDBDBE;
+            /*color: #BDBDBE;*/
             font-family: "basis-grotesque-bold";
             font-size: 13px;
             text-align: center;
         }
 
         #nocrypto {
-            color: #BDBDBE;
+            display: none;
+            /*color: #BDBDBE;*/
             font-family: "basis-grotesque-bold";
             font-size: 13px;
             text-align: center;
@@ -132,6 +135,7 @@
             width: 100%;
             height: 100%;
         }
+
         #attribution {
             position: absolute;
             bottom: 0;
@@ -143,6 +147,10 @@
         }
         #attribution, #attribution a {
             color: #999;
+        }
+
+        .error{
+            display: none;
         }
     </style>
   </head>
@@ -156,14 +164,13 @@
                 <div id="passArea">
                     <input id="pass" type="password" name="pass" autofocus>
                     <div id="passtext">
-                        <button id="submitPass" type="button">Submit</button>
                         <span id="messageWrapper">
                             <span id="invalidPass" class="error">Sorry, please try again.<br></span>
                             <span id="trycatcherror" class="error">Sorry, something went wrong.<br></span>
                             <span id="success" class="notifyText">Success!<br></span>
                             &nbsp;
                         </span>
-                        
+                        <button id="submitPass" type="button">SUBMIT</button>
                         <div style="clear: both;"></div>
                     </div>
                 </div>
