@@ -15,9 +15,20 @@
             overflow-y: hidden;
         }
         #dialogText {
+            text-align: center;
+            font-family: "basis-grotesque-bold";
             padding: 10px 30px;
             color: white;
-            background-color: #333333;
+            font-size: 2rem;
+        }
+
+        #subtitle {
+            text-align: center;
+            font-family: "basis-grotesque-bold";
+            padding: 10px 30px;
+            padding-top: 0;
+            color: #BDBDBE;
+            font-size: 1rem;
         }
         
         #dialogWrap {
@@ -27,7 +38,7 @@
             width: 100%;
             height: 100%;
             display: table;
-            background-color: #fbfbf8;
+            background-color: #29292B;
         }
         
         #dialogWrapCell {
@@ -37,29 +48,30 @@
         }
         
         #mainDialog {
-            max-width: 400px;
             margin: 5px;
-            border: solid #AAAAAA 1px;
-            border-radius: 10px;
-            box-shadow: 1px 1px 3px 3px #67676740;
             margin-left: auto;
             margin-right: auto;
-            background-color: #FFFFFF;
             overflow: hidden;
             text-align: left;
         }
+
         #passArea {
-            padding: 20px 30px;
-            background-color: white;
+            font-size: 16px;
+            color: #BDBDBE;
+            padding: 20px 25vw;
+            padding-top: 90px;
         }
         #passArea > * {
             margin: 3px auto;
         }
+
         #pass {
-            padding-left: 5px;
+            padding-left: 20px;
             width: 100%;
-            height: 35px;
+            height: 70px;
             font-size: 20px;
+            color: #29292B;
+            border-radius: 5px;
         }
         
         #messageWrapper {
@@ -73,21 +85,46 @@
         }
         
         #invalidPass {
-            color: orangered;
+            color: white;
         }
         
         #success {
-            color: black;
+            color: white;
+        }
+
+        #securecontext {
+            padding-top: 60px;
+            color: #BDBDBE;
+            font-family: "basis-grotesque-bold";
+            font-size: 13px;
+            text-align: center;
+        }
+
+        #nocrypto {
+            color: #BDBDBE;
+            font-family: "basis-grotesque-bold";
+            font-size: 13px;
+            text-align: center;
         }
         
         #submitPass {
-            font-size: 11px;
-            border-radius: 5px;
-            background-color: #E7E7E7;
-            border: solid gray 1px;
+            color: #BDBDBE;
+            border-color: #BDBDBE;
+            border-style: solid;
+            border-width: 2px;
+            border-radius: 3px;
+            font-family: "basis-grotesque-bold";
+            font-size: 14px;
+            background-color: #29292B;
+            padding: 7px 25px;
             float: right;
-            padding: 3px 13px;
         }
+
+        #passtext {
+            margin-top: 20px;
+            line-height: 10px;
+        }
+
         #contentFrame {
             position: absolute;
             top: 0;
@@ -102,8 +139,7 @@
             right: 0;
             text-align: center;
             padding: 10px;
-            font-weight: bold;
-            font-size: 0.8em;
+            font-size: 0.7em;
         }
         #attribution, #attribution a {
             color: #999;
@@ -115,18 +151,19 @@
     <div id="dialogWrap">
         <div id="dialogWrapCell">
             <div id="mainDialog">
-                <div id="dialogText">This page is password protected.</div>
+                <div id="dialogText">This content is protected.</div>
+                <div id="subtitle">To view, please enter the password.</div>
                 <div id="passArea">
-                    <p id="passwordPrompt">Password</p>
                     <input id="pass" type="password" name="pass" autofocus>
-                    <div>
+                    <div id="passtext">
+                        <button id="submitPass" type="button">Submit</button>
                         <span id="messageWrapper">
-                            <span id="invalidPass" class="error">Sorry, please try again.</span>
-                            <span id="trycatcherror" class="error">Sorry, something went wrong.</span>
-                            <span id="success" class="notifyText">Success!</span>
+                            <span id="invalidPass" class="error">Sorry, please try again.<br></span>
+                            <span id="trycatcherror" class="error">Sorry, something went wrong.<br></span>
+                            <span id="success" class="notifyText">Success!<br></span>
                             &nbsp;
                         </span>
-                        <button id="submitPass" type="button">Submit</button>
+                        
                         <div style="clear: both;"></div>
                     </div>
                 </div>
@@ -144,7 +181,7 @@
         </div>
     </div>
     <div id="attribution">
-        Protected by <a href="https://www.maxlaumeister.com/pagecrypt/">PageCrypt</a>
+        Please direct any password inquiries to <a href="mailto:oshaughnessy.merrill@gmail.com">oshaughnessy.merrill@gmail.com</a>
     </div>
     <script>
     (function() {
