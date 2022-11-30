@@ -1,5 +1,5 @@
 .photo-frame {
-  padding:  4.5rem;
+  padding:  calc(40px);
 }
 
 .scroll-site {
@@ -18,9 +18,27 @@
   max-height: calc(830px*(5311/1060));
 }
 
+.blank-side-bar {
+  position: absolute;
+  width: 40px;
+  height: 100vh;
+  left: 0;
+  top: 0;
+}
+
 @media screen and (min-width: 0) and (max-width: 544px) {
   .scroll-site {
     height: auto;
     max-height: none;
     max-width: none;
   }
+}
+
+.section-name {
+  filter: invert(1);
+  mix-blend-mode: difference;
+}
+
+#overlap-row {
+  padding-top: 5px;
+}
