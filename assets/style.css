@@ -3583,29 +3583,22 @@ a.text-info:hover {
     font-style: normal;
 }
 @font-face {
-    font-family: AktivGrotesk;
-    src: url(//archiebolden.com/content/themes/archie-bolden/assets/fonts/AktivGrotesk_rg.eot);
-    src: url(//archiebolden.com/content/themes/archie-bolden/assets/fonts/AktivGrotesk_rg.eot?#iefix) format("embedded-opentype"), url(//archiebolden.com/content/themes/archie-bolden/assets/fonts/AktivGrotesk_rg.woff2) format("woff2"),
-        url(//archiebolden.com/content/themes/archie-bolden/assets/fonts/AktivGrotesk_rg.woff) format("woff"), url(//archiebolden.com/content/themes/archie-bolden/assets/fonts/AktivGrotesk_rg.ttf) format("truetype");
-    font-weight: 300;
-    font-style: normal;
-}
-@font-face {
     font-family: CanelaF;
-    src: url(//archiebolden.com/content/themes/archie-bolden/assets/fonts/Canela-Thin.eot);
-    src: url(//archiebolden.com/content/themes/archie-bolden/assets/fonts/Canela-Thin.eot?#iefix) format("embedded-opentype"), url(//archiebolden.com/content/themes/archie-bolden/assets/fonts/Canela-Thin.woff2) format("woff2"),
-        url(//archiebolden.com/content/themes/archie-bolden/assets/fonts/Canela-Thin.woff) format("woff"), url(//archiebolden.com/content/themes/archie-bolden/assets/fonts/Canela-Thin.ttf) format("truetype");
+    src: url(//merrilloshaughnessy.com/assets/fonts/CanelaThin.eot);
+    src: url(//merrilloshaughnessy.com/assets/fonts/CanelaThin.eot?#iefix) format("embedded-opentype"), url(//merrilloshaughnessy.com/assets/fonts/CanelaThin.woff2) format("woff2"),
+        url(//merrilloshaughnessy.com/assets/fonts/CanelaThin.woff) format("woff"), url(//merrilloshaughnessy.com/assets/fonts/CanelaThin.ttf) format("truetype");
     font-weight: 100;
     font-style: normal;
 }
 @font-face {
-    font-family: GothamF;
-    src: url(//archiebolden.com/content/themes/archie-bolden/assets/fonts/Gotham-Medium.eot);
-    src: url(//archiebolden.com/content/themes/archie-bolden/assets/fonts/Gotham-Medium.eot?#iefix) format("embedded-opentype"), url(//archiebolden.com/content/themes/archie-bolden/assets/fonts/Gotham-Medium.woff2) format("woff2"),
-        url(//archiebolden.com/content/themes/archie-bolden/assets/fonts/Gotham-Medium.woff) format("woff"), url(//archiebolden.com/content/themes/archie-bolden/assets/fonts/Gotham-Medium.ttf) format("truetype");
-    font-weight: 500;
-    font-style: normal;
-} /*! normalize.css v8.0.0 | MIT License | github.com/necolas/normalize.css */
+    font-family: CanelaF;
+    src: url(//merrilloshaughnessy.com/assets/fonts/CanelaThinItalic.eot);
+    src: url(//merrilloshaughnessy.com/assets/fonts/CanelaThinItalic.eot?#iefix) format("embedded-opentype"), url(//merrilloshaughnessy.com/assets/fonts/CanelaThinItalic.woff2) format("woff2"),
+        url(//merrilloshaughnessy.com/assets/fonts/CanelaThinItalic.woff) format("woff"), url(//merrilloshaughnessy.com/assets/fonts/CanelaThinItalic.ttf) format("truetype");
+    font-weight: 100;
+    font-style: italic;
+}
+ /*! normalize.css v8.0.0 | MIT License | github.com/necolas/normalize.css */
 html {
     line-height: 1.15;
     -webkit-text-size-adjust: 100%;
