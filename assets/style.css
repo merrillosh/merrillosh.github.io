@@ -3576,10 +3576,10 @@ a.text-info:hover {
 }
 @font-face {
     font-family: AktivGrotesk;
-    src: url(//archiebolden.com/content/themes/archie-bolden/assets/fonts/AktivGrotesk.eot);
-    src: url(//archiebolden.com/content/themes/archie-bolden/assets/fonts/AktivGrotesk.eot?#iefix) format("embedded-opentype"), url(//archiebolden.com/content/themes/archie-bolden/assets/fonts/AktivGrotesk.woff2) format("woff2"),
-        url(//archiebolden.com/content/themes/archie-bolden/assets/fonts/AktivGrotesk.woff) format("woff"), url(//archiebolden.com/content/themes/archie-bolden/assets/fonts/AktivGrotesk.ttf) format("truetype");
-    font-weight: 300;
+    src: url(//merrilloshaughnessy.com/assets/fonts/AktivGroteskRegular.eot);
+    src: url(//merrilloshaughnessy.com/assets/fonts/AktivGroteskRegular.eot?#iefix) format("embedded-opentype"), url(//merrilloshaughnessy.com/assets/fonts/AktivGroteskRegular.woff2) format("woff2"),
+        url(//merrilloshaughnessy.com/assets/fonts/AktivGroteskRegular.woff) format("woff"), url(//merrilloshaughnessy.com/assets/fonts/AktivGroteskRegular.ttf) format("truetype");
+    font-weight: 400;
     font-style: normal;
 }
 @font-face {
@@ -3587,7 +3587,7 @@ a.text-info:hover {
     src: url(//archiebolden.com/content/themes/archie-bolden/assets/fonts/AktivGrotesk_rg.eot);
     src: url(//archiebolden.com/content/themes/archie-bolden/assets/fonts/AktivGrotesk_rg.eot?#iefix) format("embedded-opentype"), url(//archiebolden.com/content/themes/archie-bolden/assets/fonts/AktivGrotesk_rg.woff2) format("woff2"),
         url(//archiebolden.com/content/themes/archie-bolden/assets/fonts/AktivGrotesk_rg.woff) format("woff"), url(//archiebolden.com/content/themes/archie-bolden/assets/fonts/AktivGrotesk_rg.ttf) format("truetype");
-    font-weight: 400;
+    font-weight: 300;
     font-style: normal;
 }
 @font-face {
@@ -4772,7 +4772,7 @@ a.read-more:hover:after {
     float: right;
     margin-left: 10px;
     margin-top: -2.5px;
-    background-image: url("https://merrilloshaughnessy.com/Merrill%20O'Shaughnessy%20Files/down.png");
+    background-image: url("./down.png");
     background-size: contain;
     background-repeat: no-repeat;
 }
