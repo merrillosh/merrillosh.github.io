@@ -3583,6 +3583,14 @@ a.text-info:hover {
     font-style: normal;
 }
 @font-face {
+    font-family: AktivGrotesk;
+    src: url(//merrilloshaughnessy.com/assets/fonts/AktivGroteskLight.eot);
+    src: url(//merrilloshaughnessy.com/assets/fonts/AktivGroteskLight.eot?#iefix) format("embedded-opentype"), url(//merrilloshaughnessy.com/assets/fonts/AktivGroteskLight.woff2) format("woff2"),
+        url(//merrilloshaughnessy.com/assets/fonts/AktivGroteskLight.woff) format("woff"), url(//merrilloshaughnessy.com/assets/fonts/AktivGroteskLight.ttf) format("truetype");
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
     font-family: CanelaF;
     src: url(//merrilloshaughnessy.com/assets/fonts/CanelaThin.eot);
     src: url(//merrilloshaughnessy.com/assets/fonts/CanelaThin.eot?#iefix) format("embedded-opentype"), url(//merrilloshaughnessy.com/assets/fonts/CanelaThin.woff2) format("woff2"),
