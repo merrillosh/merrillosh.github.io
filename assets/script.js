@@ -11746,7 +11746,7 @@ var _gsScope = "undefined" != typeof module && module.exports && "undefined" != 
   (function (t) {
       function e() {
           t("a").each(function () {
-              (this.href.indexOf("/wp-admin/") === -1 && this.href.indexOf("/wp-login.php") === -1) || t(this).addClass("wp-link");
+              (t(this).addClass("wp-link"));
           });
       }
       t(function () {
