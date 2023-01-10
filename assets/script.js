@@ -212,8 +212,7 @@ function initializeTheme() {
       }),
       $(".close-popup").on("click", function () {
           $("#popup-container").fadeOut();
-      }),
-      $(".home-carousel").owlCarousel({ loop: !0, autoplay: !0, items: 1, pagination: !1, lazyLoad: !0, nav: !1, mouseDrag: !1, touchDrag: !1, animateOut: "fadeOut", animateIn: "fadeIn" });
+      });
   var f = new WOW({ boxClass: "wow", animateClass: "animated", offset: 0, mobile: !0, live: !0, callback: function (t) {}, scrollContainer: null, resetAnimation: !0 });
   f.init();
   new LazyLoad({
