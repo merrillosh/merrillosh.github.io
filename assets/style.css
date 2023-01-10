@@ -104,32 +104,7 @@ body {
     --preset--font-size--medium: 20px;
     --preset--font-size--large: 36px;
     --preset--font-size--x-large: 42px;
-} /*!
-Theme Name: Archie Bolden
-Theme URI: http://underscores.me/
-Author: Groundcrew
-Author URI: http://underscores.me/
-Description: Description
-Version: 1.0.0
-License: GNU General Public License v2 or later
-License URI: LICENSE
-Text Domain: archie-bolden
-Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
-
-This theme, like WordPress, is licensed under the GPL.
-Use it to make something cool, have fun, and share what you've learned with others.
-
-Archie Bolden is based on Underscores https://underscores.me/, (C) 2012-2017 Automattic, Inc.
-Underscores is distributed under the terms of the GNU GPL v2 or later.
-
-Normalizing styles have been helped along thanks to the fine work of
-Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
-*/ /*!
- * Bootstrap v4.0.0 (https://getbootstrap.com)
- * Copyright 2011-2018 The Bootstrap Authors
- * Copyright 2011-2018 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
- */
+} 
 :root {
     --blue: #007bff;
     --indigo: #6610f2;
@@ -588,6 +563,11 @@ h6 {
     background-color: #fff;
     border-color: #dee2e6;
 }
+.slide-out .slide-1{
+
+}
+
+
 @-webkit-keyframes progress-bar-stripes {
     from {
         background-position: 1rem 0;
@@ -5102,114 +5082,6 @@ a.read-more:hover:after {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-}
-#popup-container {
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background-color: rgba(51, 72, 71, 0.7);
-    z-index: 500;
-    display: none;
-}
-#popup-container .underlay {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    z-index: 1;
-}
-#popup-container #subscribe-popup {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: #334847;
-    padding: 80px;
-    width: 90%;
-    max-width: 650px;
-    color: #fff;
-    z-index: 3;
-}
-@media (max-width: 768px) {
-    #popup-container #subscribe-popup {
-        padding: 40px;
-    }
-}
-#popup-container #subscribe-popup .close-popup {
-    width: 40px;
-    height: 40px;
-    position: absolute;
-    right: 10px;
-    top: 10px;
-    background-image: url("https://sp-ao.shortpixel.ai/client/to_auto, q_glossy, ret_img/https://archiebolden.com/content/themes/archie-bolden/assets/images/close.png");
-    background-size: 50%;
-    background-repeat: no-repeat;
-    background-position: center center;
-    opacity: 0.5;
-    cursor: pointer;
-}
-@media (max-width: 768px) {
-    #popup-container #subscribe-popup .close-popup {
-        width: 30px;
-        height: 30px;
-    }
-}
-#popup-container #subscribe-popup .close-popup:hover {
-    opacity: 1;
-}
-#popup-container #subscribe-popup .subtitle,
-#popup-container #subscribe-popup .title {
-    margin: 0;
-}
-#popup-container #subscribe-popup form.subscribe {
-    margin-top: 40px;
-    position: relative;
-    float: left;
-    width: 100%;
-}
-#popup-container #subscribe-popup form.subscribe input:focus {
-    outline: 0;
-}
-#popup-container #subscribe-popup form.subscribe .email {
-    position: relative;
-    float: left;
-    width: 100%;
-    background-color: transparent;
-    border: 0 solid transparent;
-    font-size: 20px;
-    color: #fff;
-    padding-bottom: 5px;
-    font-weight: 100;
-    border-radius: 0;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-    margin-bottom: 10px;
-}
-#popup-container #subscribe-popup form.subscribe .disclaimer {
-    font-size: 11px;
-    color: rgba(255, 255, 255, 0.3);
-    width: 100%;
-    display: block;
-    letter-spacing: 0.5px;
-}
-#popup-container #subscribe-popup form.subscribe .submit {
-    margin-top: 40px;
-    background-color: transparent;
-    letter-spacing: 1px;
-    color: #fff;
-    font-size: 20px;
-    font-weight: 100;
-    border-radius: 0;
-    border: 0 solid transparent;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.35);
-    transition: border-bottom 0.3s ease;
-    padding: 5px 0;
-    cursor: pointer;
-}
-#popup-container #subscribe-popup form.subscribe .submit:hover {
-    border-bottom: 1px solid #fff;
 }
 #introduction {
     width: 100vw;
