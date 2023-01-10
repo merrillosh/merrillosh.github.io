@@ -114,39 +114,39 @@ function initializeTheme() {
   }
  function e() {
       $(".site-content .homepage-content").css("opacity", 0),
-          TweenMax.to($("#introduction .slide-1"), 0.75, { width: "0px", ease: Circ.easeInOut }, "-=1"),
-          TweenMax.to($("#introduction"), 0.75, { height: "0%", ease: Circ.easeInOut, delay: 0.85 }, "-=1"),
-          TweenMax.to($(".site-content .homepage-content"), 0.75, { delay: 1.25, autoAlpha: 1 }, "-=1"),
+          gsap.to($("#introduction .slide-1"), 0.75, { width: "0px", ease: Circ.easeInOut }, "-=1"),
+          gsap.to($("#introduction"), 0.75, { height: "0%", ease: Circ.easeInOut, delay: 0.85 }, "-=1"),
+          gsap.to($(".site-content .homepage-content"), 0.75, { delay: 1.25, autoAlpha: 1 }, "-=1"),
           $("body").removeClass("scrollStop");
   }
   function i() {
       $("#menu").hasClass("active") ? $("#menu").find("span").text("") : $("#menu").find("span").text(""),
-          TweenMax.to($(this).find(".menu-circle"), 0.5, { ease: Elastic.easeOut.config(1, 0.5), width: 40, height: 40 }),
-          TweenMax.to($(this).find("span"), 0.3, { ease: Power1.easeOut, opacity: 1, delay: 0.1 });
+          gsap.to($(this).find(".menu-circle"), 0.5, { ease: Elastic.easeOut.config(1, 0.5), width: 40, height: 40 }),
+          gsap.to($(this).find("span"), 0.3, { ease: Power1.easeOut, opacity: 1, delay: 0.1 });
   }
   function n() {
-      TweenMax.to($(this).find(".menu-circle"), 0.3, { ease: Elastic.easeOut.config(1, 0.5), width: 25, height: 25, delay: 0.1 }), TweenMax.to($(this).find("span"), 0.3, { ease: Circ.easeInOut, opacity: 0 });
+      gsap.to($(this).find(".menu-circle"), 0.3, { ease: Elastic.easeOut.config(1, 0.5), width: 25, height: 25, delay: 0.1 }), gsap.to($(this).find("span"), 0.3, { ease: Circ.easeInOut, opacity: 0 });
   }
   function r() {
       $("#overlay-navigation").hasClass("active") ? o() : s();
   }
   function s() {
-      TweenMax.to($("#overlay-navigation"), 1, { ease: Circ.easeInOut, y: "0%" }, "-=1"),
-          TweenMax.to($("#overlay-navigation .inner, #overlay-navigation .socials"), 0.5, { ease: Power1.easeOut, css: { marginTop: 0, opacity: 1 }, delay: 1 }, "-=1"),
+      gsap.to($("#overlay-navigation"), 1, { ease: Circ.easeInOut, y: "0%" }, "-=1"),
+          gsap.to($("#overlay-navigation .inner, #overlay-navigation .socials"), 0.5, { ease: Power1.easeOut, css: { marginTop: 0, opacity: 1 }, delay: 1 }, "-=1"),
           $("#overlay-navigation, #menu").addClass("active"),
           setTimeout(function () {
               $("body").addClass("scrollStop");
           }, 500);
   }
   function o() {
-      TweenMax.to($("#overlay-navigation"), 0.75, { y: "-100%", ease: Circ.easeInOut, delay: 0.5 }, "-=1"),
-          TweenMax.to($("#overlay-navigation .inner,  #overlay-navigation .socials"), 0.5, { ease: Power1.easeOut, css: { marginTop: 0, opacity: 0 }, delay: 0 }, "-=1"),
+      gsap.to($("#overlay-navigation"), 0.75, { y: "-100%", ease: Circ.easeInOut, delay: 0.5 }, "-=1"),
+          gsap.to($("#overlay-navigation .inner,  #overlay-navigation .socials"), 0.5, { ease: Power1.easeOut, css: { marginTop: 0, opacity: 0 }, delay: 0 }, "-=1"),
           $("#overlay-navigation, #menu").removeClass("active"),
           $("body").removeClass("scrollStop");
   }
   function a() {
       $("#scrolling-wrapper").hasClass("mobile-view") &&
-          $(window).scroll(function () {
+          $(window).on("scroll", function () {
               ($position = $(window).scrollTop()),
                   ($nearBottom = $(document).height() - ($(window).height() + 200)),
                   ($startScrolling = 100),
@@ -161,7 +161,7 @@ function initializeTheme() {
   }
   function h() {
       (p = setInterval(function () {
-          m < 5 ? m++ : ($(".next-project-link").click(), c());
+          m < 5 ? m++ : ($(".next-project-link").trigger("click"), c());
       }, 500)),
           d.push(p);
   }
@@ -183,10 +183,10 @@ function initializeTheme() {
           t(),
           $(".fade-in-element").addClass("fade-in");
   }),
-      $(window).resize(function () {
+      $(window).on("resize", function () {
           t();
       }),
-      $("#mc-subscribe").submit(function (t) {
+      $("#mc-subscribe").on("submit", function (t) {
           var e = $(this);
           return (
               $.ajax({
@@ -200,7 +200,7 @@ function initializeTheme() {
                   },
                   success: function (t) {
                       "success" != t.result
-                          ? ($("#mc-subscribe .signup-internal").html('<h2 class="message">There was an issue with your subscription. Please contact us at holla@archiebolden.com</h2>'), console.log("Subscription Did not work"))
+                          ? ($("#mc-subscribe .signup-internal").html('<h2 class="message">There was an issue with your subscription. </h2>'), console.log("Subscription Did not work"))
                           : $("#mc-subscribe .signup-internal").html('<h2 class="message">Thanks for joining!</h2>');
                   },
               }),
