@@ -5099,7 +5099,7 @@ a.read-more:hover:after {
     background-color: #2c3f3d;
     cursor: pointer;
     overflow: hidden;
-    transition: 0.5s ease height;
+    /*transition: 0.5s ease height;*/
 }
 #introduction .image-container {
     width: 100vw;
@@ -5128,7 +5128,7 @@ a.read-more:hover:after {
     right: 0;
     bottom: 0;
     background: #fff;
-    transition: 0.5s ease width;
+    /*transition: 0.5s ease width;*/
 }
 #introduction .slide-2 {
     height: 0;
