@@ -176,7 +176,7 @@ function initializeTheme() {
                   ($active = $(".animatingWrapper .visible")), ($next = $active.next()), $active.removeClass("visible"), $next[0] ? $next.addClass("visible") : $(".animatingWrapper .word").first().addClass("visible");
               }, 1500)));
   }
-  $(document).ready(function () {
+  $(function () {
       setTimeout(function () {
           e(), a();
       }, 500),
@@ -191,7 +191,7 @@ function initializeTheme() {
           return (
               $.ajax({
                   type: "GET",
-                  url: "https://tdcreativeagency.us11.list-manage.com/subscribe/post-json?u=fa21028c00db83f71e4ce49e0&amp;id=ae32099ca2&c=?",
+                  url: "",
                   data: e.serialize(),
                   dataType: "json",
                   contentType: "application/json; charset=utf-8",
@@ -207,10 +207,10 @@ function initializeTheme() {
               !1
           );
       }),
-      $(".fire-popup").click(function (t) {
+      $(".fire-popup").on("click", function (t) {
           t.preventDefault(), $("#popup-container").fadeIn();
       }),
-      $(".close-popup").click(function () {
+      $(".close-popup").on("click", function () {
           $("#popup-container").fadeOut();
       }),
       $(".home-carousel").owlCarousel({ loop: !0, autoplay: !0, items: 1, pagination: !1, lazyLoad: !0, nav: !1, mouseDrag: !1, touchDrag: !1, animateOut: "fadeOut", animateIn: "fadeIn" });
@@ -362,7 +362,7 @@ function initializeTheme() {
       dt.addEventListener ? (dt.removeEventListener("DOMContentLoaded", a, !1), t.removeEventListener("load", a, !1)) : (dt.detachEvent("onreadystatechange", a), t.detachEvent("onload", a));
   }
   function a() {
-      (dt.addEventListener || "load" === event.type || "complete" === dt.readyState) && (o(), rt.ready());
+      (dt.addEventListener || "load" === Event.type || "complete" === dt.readyState) && (o(), rt.ready());
   }
   function l(t, e, i) {
       if (void 0 === i && 1 === t.nodeType) {
