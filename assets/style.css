@@ -563,8 +563,16 @@ h6 {
     background-color: #fff;
     border-color: #dee2e6;
 }
-.slide-out .slide-1{
 
+.slide-out #introduction {
+    height: 100vh;
+}
+
+.slide-out .slide-1 {
+    width: 100vw;
+}
+.slide-out .slide-2 {
+    height: 100vh;
 }
 
 
@@ -5085,12 +5093,13 @@ a.read-more:hover:after {
 }
 #introduction {
     width: 100vw;
-    height: 100vh;
+    height: 0;
     position: fixed;
     z-index: 105;
     background-color: #2c3f3d;
     cursor: pointer;
     overflow: hidden;
+    transition: 0.5s ease height;
 }
 #introduction .image-container {
     width: 100vw;
