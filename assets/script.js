@@ -6759,7 +6759,7 @@ var _gsScope = "undefined" != typeof module && module.exports && "undefined" != 
 (_gsScope._gsQueue || (_gsScope._gsQueue = [])).push(function () {
   "use strict";
   _gsScope._gsDefine(
-      "TweenMax",
+      "gsap",
       ["core.Animation", "core.SimpleTimeline", "TweenLite"],
       function (t, e, i) {
           var n = function (t) {
@@ -7092,14 +7092,14 @@ var _gsScope = "undefined" != typeof module && module.exports && "undefined" != 
                   (g.constructor = n),
                   (g.kill()._gc = g._forcingPlayhead = g._hasPause = !1),
                   (g.to = function (t, e, n, r) {
-                      var s = (n.repeat && u.TweenMax) || i;
+                      var s = (n.repeat && u.gsap) || i;
                       return e ? this.add(new s(t, e, n), r) : this.set(t, n, r);
                   }),
                   (g.from = function (t, e, n, r) {
-                      return this.add(((n.repeat && u.TweenMax) || i).from(t, e, n), r);
+                      return this.add(((n.repeat && u.gsap) || i).from(t, e, n), r);
                   }),
                   (g.fromTo = function (t, e, n, r, s) {
-                      var o = (r.repeat && u.TweenMax) || i;
+                      var o = (r.repeat && u.gsap) || i;
                       return e ? this.add(o.fromTo(t, e, n, r), s) : this.set(t, r, s);
                   }),
                   (g.staggerTo = function (t, e, r, s, o, l, h, c) {
@@ -7436,7 +7436,7 @@ var _gsScope = "undefined" != typeof module && module.exports && "undefined" != 
                           r,
                           s,
                           o = { ease: h, useFrames: this.usesFrames(), immediateRender: !1 },
-                          a = (i.repeat && l.TweenMax) || e;
+                          a = (i.repeat && l.gsap) || e;
                       for (r in i) o[r] = i[r];
                       return (
                           (o.time = this._parseTimeOrLabel(t)),
@@ -10863,7 +10863,7 @@ var _gsScope = "undefined" != typeof module && module.exports && "undefined" != 
           }
           h = !1;
       }
-  })("undefined" != typeof module && module.exports && "undefined" != typeof global ? global : this || window, "TweenMax");
+  })("undefined" != typeof module && module.exports && "undefined" != typeof global ? global : this || window, "gsap");
 var _gsScope = "undefined" != typeof module && module.exports && "undefined" != typeof global ? global : this || window;
 (_gsScope._gsQueue || (_gsScope._gsQueue = [])).push(function () {
   "use strict";
@@ -11657,17 +11657,17 @@ var _gsScope = "undefined" != typeof module && module.exports && "undefined" != 
   }),
   (function (t, e) {
       "function" == typeof define && define.amd
-          ? define(["ScrollMagic", "TweenMax", "TimelineMax"], e)
+          ? define(["ScrollMagic", "gsap", "TimelineMax"], e)
           : "object" == typeof exports
-          ? (require("gsap"), e(require("scrollmagic"), TweenMax, TimelineMax))
-          : e(t.ScrollMagic || (t.jQuery && t.jQuery.ScrollMagic), t.TweenMax || t.TweenLite, t.TimelineMax || t.TimelineLite);
+          ? (require("gsap"), e(require("scrollmagic"), gsap, TimelineMax))
+          : e(t.ScrollMagic || (t.jQuery && t.jQuery.ScrollMagic), t.gsap || t.TweenLite, t.TimelineMax || t.TimelineLite);
   })(this, function (t, e, i) {
       "use strict";
       var n = "animation.gsap",
           r = window.console || {},
           s = Function.prototype.bind.call(r.error || r.log || function () {}, r);
       t || s("(" + n + ") -> ERROR: The ScrollMagic main module could not be found. Please make sure it's loaded before this plugin or use an asynchronous loader like requirejs."),
-          e || s("(" + n + ") -> ERROR: TweenLite or TweenMax could not be found. Please make sure GSAP is loaded before ScrollMagic or use an asynchronous loader like requirejs."),
+          e || s("(" + n + ") -> ERROR: TweenLite or gsap could not be found. Please make sure GSAP is loaded before ScrollMagic or use an asynchronous loader like requirejs."),
           t.Scene.addOption("tweenChanges", !1, function (t) {
               return !!t;
           }),
