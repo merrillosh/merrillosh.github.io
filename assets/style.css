@@ -5128,6 +5128,7 @@ a.read-more:hover:after {
     right: 0;
     bottom: 0;
     background: #fff;
+    transition: 0.5s ease width;
 }
 #introduction .slide-2 {
     height: 0;
