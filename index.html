@@ -117,6 +117,18 @@
             }
         </style>
         <script async="" src="./assets/script.js"></script>
+        <noscript>
+          <style>
+              .lazyload {
+                  display: none;
+              }
+          </style>
+        </noscript>
+        <script data-noptimize="1">
+            window.lazySizesConfig = window.lazySizesConfig || {};
+            window.lazySizesConfig.loadMode = 1;
+        </script>
+        <script async="" data-noptimize="1" src="./assets/lazysizes.min.js"></script>
     </head>
     <body class="home page-template page-template-templates page-template-template-homepage page-template-templatestemplate-homepage-php page page-id-6">
         <div id="page" class="site">
@@ -185,7 +197,7 @@
                     <div id="primary" class="content-area">
                         <main id="main" class="site-main home">
                             <div class="content-section banner-section">
-                                <div class="half" style="width: calc(50%);">
+                                <div class="half" style="width: 50%;">
                                     <div class="content-wrapper">
                                         <div class="internal no-padding">
                                             <h4 class="title-caption">
@@ -196,7 +208,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="half maroon carousel-half" style="width: calc(50%);">
+                                <div class="half maroon carousel-half" style="width: 50%;">
                                     <div class="home-carousel owl-loaded">
                                         <div class="owl-stage-outer">
                                             <div class="owl-stage" style="transform: translate3d(-6291px, 0px, 0px); transition: all 0s ease 0s; width: 10485px;">
@@ -696,19 +708,6 @@
                 </div>
             </footer>
         </div>
-        <noscript>
-            <style>
-                .lazyload {
-                    display: none;
-                }
-            </style>
-        </noscript>
-        <script data-noptimize="1">
-            window.lazySizesConfig = window.lazySizesConfig || {};
-            window.lazySizesConfig.loadMode = 1;
-        </script>
-        <script async="" data-noptimize="1" src="./assets/lazysizes.min.js"></script>
-        <script defer="" src="./assets/script.js"></script>
     </body>
     <grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration>
 </html>

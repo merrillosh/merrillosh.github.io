@@ -564,16 +564,6 @@ h6 {
     border-color: #dee2e6;
 }
 
-/*.slide-out #introduction {
-    height: 100vh;
-}
-
-.slide-out .slide-1 {
-    width: 100vw;
-}
-.slide-out .slide-2 {
-    height: 100vh;
-}*/
 
 
 @-webkit-keyframes progress-bar-stripes {
@@ -5099,7 +5089,6 @@ a.read-more:hover:after {
     background-color: #2c3f3d;
     cursor: pointer;
     overflow: hidden;
-    /*transition: 0.5s ease height;*/
 }
 #introduction .image-container {
     width: 100vw;
@@ -5128,7 +5117,6 @@ a.read-more:hover:after {
     right: 0;
     bottom: 0;
     background: #fff;
-    /*transition: 0.5s ease width;*/
 }
 #introduction .slide-2 {
     height: 0;
