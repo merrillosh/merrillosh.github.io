@@ -564,6 +564,18 @@ h6 {
     border-color: #dee2e6;
 }
 
+.slide-out #introduction {
+    height: 100vh;
+}
+
+.slide-out .slide-1 {
+    width: 100vw;
+}
+.slide-out .slide-2 {
+    height: 100vh;
+}
+
+
 @-webkit-keyframes progress-bar-stripes {
     from {
         background-position: 1rem 0;
