@@ -11774,5 +11774,10 @@ var _gsScope = "undefined" != typeof module && module.exports && "undefined" != 
     container: '.my-slider',
     items: 1,
     slideBy: 'page',
-    autoplay: true
+    autoplay: true,
+    controls: false,
+    nav: false,
+    autoplayButtonOutput: false,
+    gutter: 0,
+    edgePadding: 0
   });
