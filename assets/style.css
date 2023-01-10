@@ -564,7 +564,7 @@ h6 {
     border-color: #dee2e6;
 }
 
-.slide-out #introduction {
+/*.slide-out #introduction {
     height: 100vh;
 }
 
@@ -573,7 +573,7 @@ h6 {
 }
 .slide-out .slide-2 {
     height: 100vh;
-}
+}*/
 
 
 @-webkit-keyframes progress-bar-stripes {
@@ -5093,7 +5093,7 @@ a.read-more:hover:after {
 }
 #introduction {
     width: 100vw;
-    height: 0;
+    height: 100vh;
     position: fixed;
     z-index: 105;
     background-color: #2c3f3d;
