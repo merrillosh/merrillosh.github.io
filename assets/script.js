@@ -112,13 +112,13 @@ function initializeTheme() {
             })
           : ($(".first").css("height", "auto"), $(".second").css("height", "auto"));
   }
-  function e() {
+  /*function e() {
       $(".site-content .homepage-content").css("opacity", 0),
           TweenMax.to($("#introduction .slide-1"), 0.75, { width: "0px", ease: Circ.easeInOut }, "-=1"),
           TweenMax.to($("#introduction"), 0.75, { height: "0%", ease: Circ.easeInOut, delay: 0.85 }, "-=1"),
           TweenMax.to($(".site-content .homepage-content"), 0.75, { delay: 1.25, autoAlpha: 1 }, "-=1"),
           $("body").removeClass("scrollStop");
-  }
+  }*/
   function i() {
       $("#menu").hasClass("active") ? $("#menu").find("span").text("") : $("#menu").find("span").text(""),
           TweenMax.to($(this).find(".menu-circle"), 0.5, { ease: Elastic.easeOut.config(1, 0.5), width: 40, height: 40 }),
