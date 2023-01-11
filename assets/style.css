@@ -1,15 +1,4 @@
 @charset "UTF-8";
-img.emoji {
-    display: inline !important;
-    border: none !important;
-    box-shadow: none !important;
-    height: 1em !important;
-    width: 1em !important;
-    margin: 0 0.07em !important;
-    vertical-align: -0.1em !important;
-    background: 0 0 !important;
-    padding: 0 !important;
-}
 :where(.block-button__link).is-style-outline {
     border: 2px solid;
     padding: 0.667em 1.333em;
