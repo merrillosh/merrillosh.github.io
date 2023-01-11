@@ -4860,6 +4860,10 @@ a.read-more:hover:after {
     width: 100%;
     padding: 15vh 0;
 }
+#carousel-half {
+    width: 50.3% !important;
+    margin-left: -0.3%;
+}
 @media (max-width: 768px) {
     #main.home .content-section.banner-section {
         height: auto;
@@ -4875,7 +4879,7 @@ a.read-more:hover:after {
         height: 50vh;
     }
     #carousel-half {
-        width: 100%;
+        width: 100% !important;
         margin-left: 0;
         background-position: center;
     }
