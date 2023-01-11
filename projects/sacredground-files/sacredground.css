@@ -376,7 +376,7 @@ body.no-margin {
     right: 40px;
     width: 30px;
     height: 30px;
-    background-image: url(https://archiebolden.com/content/themes/archie-bolden/assets/images/close-100.png);
+    background-image: url(../../assets/img/close.png);
     background-size: 75%;
     background-repeat: no-repeat;
     background-position: center center;
