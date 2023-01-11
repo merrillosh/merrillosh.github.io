@@ -4769,6 +4769,10 @@ a.read-more:hover:after {
         bottom: 25px;
     }
 }
+#fixed-footer.hidden-element {
+    opacity: 0;
+    pointer-events: none;
+}
 #fixed-footer .scroll {
     position: relative;
     float: left;
