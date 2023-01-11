@@ -4116,6 +4116,11 @@ img.background-image {
     object-fit: cover;
     object-position: center center;
 }
+@media (max-width: 768px) {
+    img.background-image {
+        translate: 0 -25%;
+    }
+}
 a.read-more {
     color: #000;
     position: relative;
@@ -4869,6 +4874,11 @@ a.read-more:hover:after {
     #main.home .content-section.banner-section .half.carousel-half {
         height: 50vh;
     }
+    #carousel-half {
+        width: 100%;
+        margin-left: 0;
+        background-position: center;
+    }
 }
 #main.home .content-section .half {
     position: relative;
@@ -5235,3 +5245,5 @@ iframe {
 .caption-text {
     text-align: center;
 }
+
+
