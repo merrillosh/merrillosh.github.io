@@ -4108,8 +4108,8 @@ img.background-image {
 @media (max-width: 768px) {
     img.background-image {
         translate: 0 -25%;
-        width: 100.5vw;
-        margin-left: -0.5vw;
+        width: 101vw;
+        margin-left: -1vw;
     }
 }
 a.read-more {
