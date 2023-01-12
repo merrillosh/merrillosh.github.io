@@ -4100,9 +4100,9 @@ i {
 }
 img.background-image {
     position: absolute;
-    width: auto;
-    height: 100%;
     object-fit: cover;
+    width: 50.3vw;
+    height: 100%;
     object-position: center center;
 }
 @media (max-width: 768px) {
