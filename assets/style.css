@@ -4867,7 +4867,7 @@ a.read-more:hover:after {
         height: 100vh;
     }
     #main.home .content-section.banner-section .half .content-wrapper {
-        top: 40%;
+        top: 50%;
         transform: translateY(-50%);
     }
     #main.home .content-section.banner-section .half.carousel-half {
@@ -5098,6 +5098,7 @@ a.read-more:hover:after {
 @media (max-width: 768px) {
     #introduction .image-container {
         height: 80vh;
+        top: 10vh;
     }
 }
 #introduction .banner-logo {
