@@ -395,4 +395,13 @@ body.no-margin {
         position: absolute;
         z-index: 99;
     }
+
+    #more-info {
+        display: flex;
+    }
+
+    .subtitle {
+        max-width: 90% !important;
+    }
 }
+

@@ -121,11 +121,11 @@ function initializeTheme() {
   }
   function i() {
       $("#menu").hasClass("active") ? $("#menu").find("span").text("") : $("#menu").find("span").text(""),
-          gsap.to($(this).find(".menu-circle"), 0.5, { ease: Elastic.easeOut.config(1, 0.5), width: 40, height: 40 }),
-          gsap.to($(this).find("span"), 0.3, { ease: Power1.easeOut, opacity: 1, delay: 0.1 });
+          gsap.to($(this).find(".menu-circle"), { ease: Elastic.easeOut.config(1, 0.5), width: 40, height: 40, duration: 0.5}),
+          gsap.to($(this).find("span"), { ease: Power1.easeOut, opacity: 1, delay: 0.1, duration: 0.3});
   }
   function n() {
-      gsap.to($(this).find(".menu-circle"), 0.3, { ease: Elastic.easeOut.config(1, 0.5), width: 25, height: 25, delay: 0.1 }), gsap.to($(this).find("span"), 0.3, { ease: Circ.easeInOut, opacity: 0 });
+      gsap.to($(this).find(".menu-circle"), { ease: Elastic.easeOut.config(1, 0.5), width: 25, height: 25, delay: 0.1, duration: 0.3 }), gsap.to($(this).find("span"), { ease: Circ.easeInOut, opacity: 0, duration: 0.3 });
   }
   function r() {
       $("#overlay-navigation").hasClass("active") ? o() : s();
@@ -155,9 +155,7 @@ function initializeTheme() {
           });
   }
   function l(t) {
-      t
-          ? ($("#scrolling-wrapper .scroll-marker").removeClass("delay-200"), $("#scrolling-wrapper .scroll-marker").hasClass("fade-out") || $("#scrolling-wrapper .scroll-marker").addClass("fade-out"))
-          : $("#scrolling-wrapper .scroll-marker").hasClass("fade-out") && $("#scrolling-wrapper .scroll-marker").removeClass("fade-out");
+      t ? ($("#scrolling-wrapper .scroll-marker").removeClass("delay-200"), $("#scrolling-wrapper .scroll-marker").hasClass("fade-out") || $("#scrolling-wrapper .scroll-marker").addClass("fade-out")) : $("#scrolling-wrapper .scroll-marker").hasClass("fade-out") && $("#scrolling-wrapper .scroll-marker").removeClass("fade-out");
   }
   function h() {
       (p = setInterval(function () {
