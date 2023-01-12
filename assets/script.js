@@ -237,7 +237,7 @@ function initializeTheme() {
           $("#scrolling-wrapper").addClass("mobile-view"),
           $(".project-content .more-information").addClass("mobile-view"),
           $(".article-container .filter-projects .inner").addClass("mobile-filter")),
-      $(".more-info-link").click(function () {
+      $(".more-info-link").on("click", function () {
           $(".more-information ").toggle();
       }),
       $(".more-information.mobile-view").on("click", function () {
@@ -254,17 +254,17 @@ function initializeTheme() {
               $(".fixed-progress-bar .progressBar .tracker").width($tracker),
               t.preventDefault();
       }),
-      $(".filter-projects .mobile-filter").click(function () {
+      $(".filter-projects .mobile-filter").on("click", function () {
           $("#mobile-filter").fadeIn();
       }),
-      $("#mobile-filter .close-popup").click(function () {
+      $("#mobile-filter .close-popup").on("click", function () {
           $("#mobile-filter").fadeOut();
       }),
       clearInterval(p);
   var p,
       d = [],
       m = 1;
-  $(".next-project-link").click(function () {
+  $(".next-project-link").on("click", function () {
       c();
   }),
       document.getElementById("fixed-footer") &&
