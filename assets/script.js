@@ -4019,6 +4019,7 @@ function initializeTheme() {
               (l = u.global),
                   l && 0 === rt.active++ && rt.event.trigger("ajaxStart"),
                   (u.type = u.type.toUpperCase()),
+                  (u.hasContent = !Fe.test(u.type)),
                   (s = u.url),
                   u.hasContent || (u.data && ((s = u.url += ($e.test(s) ? "&" : "?") + u.data), delete u.data), u.cache === !1 && (u.url = Le.test(s) ? s.replace(Le, "$1_=" + Oe++) : s + ($e.test(s) ? "&" : "?") + "_=" + Oe++)),
                   u.ifModified && (rt.lastModified[s] && x.setRequestHeader("If-Modified-Since", rt.lastModified[s]), rt.etag[s] && x.setRequestHeader("If-None-Match", rt.etag[s])),
@@ -11763,6 +11764,5 @@ var _gsScope = "undefined" != typeof module && module.exports && "undefined" != 
                   i.removeClass("slide-out"), initializeTheme();
               },
           };
-          t("#page").smoothState(i);
       });
   })(jQuery);
