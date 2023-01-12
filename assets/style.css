@@ -4109,6 +4109,7 @@ img.background-image {
     img.background-image {
         translate: 0 -25%;
         width: 100.3vw;
+        margin-left: -0.3vw;
     }
 }
 a.read-more {
