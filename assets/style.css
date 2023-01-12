@@ -4960,6 +4960,11 @@ a.read-more:hover:after {
     max-width: 450px;
     max-height: 80%;
 }
+#content-half {
+    width: 50%; 
+    z-index: 10; 
+    background-color: #ffffff;
+}
 @media (max-width: 768px) {
     #main.home .content-section .half .image {
         max-width: 100%;
@@ -4972,6 +4977,9 @@ a.read-more:hover:after {
         display: block;
         margin: 0 auto;
         margin-bottom: 40px;
+    }
+    #content-half {
+        width: 100%; 
     }
 }
 @media (max-width: 768px) {
