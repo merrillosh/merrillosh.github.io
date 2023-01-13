@@ -149,6 +149,11 @@ body.no-margin {
 .fade-in-element.delay-400 {
     transition-delay: 0.85s;
 }
+.fade-in-element.fade-out, .fade-in-wow.fade-out {
+    opacity: 0;
+    -webkit-transform: translateY(30px);
+    transform: translateY(30px);
+}
 .loader {
     position: relative;
     float: left;
