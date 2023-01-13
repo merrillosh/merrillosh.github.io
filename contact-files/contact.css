@@ -1,0 +1,405 @@
+@charset "UTF-8";
+h1.has-background,
+h2.has-background,
+h3.has-background,
+h4.has-background,
+h5.has-background,
+h6.has-background {
+    padding: 1.25em 2.375em;
+}
+p.has-background {
+    padding: 1.25em 2.375em;
+}
+.full_width {
+    float: left;
+}
+.full_width {
+    width: 100%;
+}
+@media screen and (max-width: 600px) {
+    .full_width {
+        clear: both;
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 1em;
+    }
+} 
+@-ms-viewport {
+    width: device-width;
+}
+article,
+footer,
+header,
+main,
+section {
+    display: block;
+}
+button {
+    border-radius: 0;
+}
+button:focus {
+    outline: 1px dotted;
+    outline: 5px auto -webkit-focus-ring-color;
+}
+button,
+input {
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+button,
+input {
+    overflow: visible;
+}
+button {
+    text-transform: none;
+}
+[type="reset"],
+[type="submit"],
+button,
+html [type="button"] {
+    -webkit-appearance: button;
+}
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner,
+button::-moz-focus-inner {
+    padding: 0;
+    border-style: none;
+}
+
+img {
+    page-break-inside: avoid;
+}
+h2,
+h3,
+p {
+    orphans: 3;
+    widows: 3;
+}
+h2,
+h3 {
+    page-break-after: avoid;
+}
+@media print {
+  *,
+  :after,
+  :before {
+      text-shadow: none !important;
+      box-shadow: none !important;
+  }
+  a:not(.btn) {
+      text-decoration: underline;
+  }
+  abbr[title]:after {
+      content: " (" attr(title) ")";
+  }
+  pre {
+      white-space: pre-wrap !important;
+  }
+  blockquote,
+  pre {
+      border: 1px solid #999;
+      page-break-inside: avoid;
+  }
+  thead {
+      display: table-header-group;
+  }
+  img,
+  tr {
+      page-break-inside: avoid;
+  }
+  h2,
+  h3,
+  p {
+      orphans: 3;
+      widows: 3;
+  }
+  h2,
+  h3 {
+      page-break-after: avoid;
+  }
+  @media print {
+    *,
+    :after,
+    :before {
+        text-shadow: none !important;
+        box-shadow: none !important;
+    }
+    a:not(.btn) {
+        text-decoration: underline;
+    }
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+    pre {
+        white-space: pre-wrap !important;
+    }
+    blockquote,
+    pre {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+    thead {
+        display: table-header-group;
+    }
+    img,
+    tr {
+        page-break-inside: avoid;
+    }
+    h2,
+    h3,
+    p {
+        orphans: 3;
+        widows: 3;
+    }
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+    @page {
+        size: a3;
+    }
+    body {
+        min-width: 992px !important;
+    }
+    .container {
+        min-width: 992px !important;
+    }
+    .navbar {
+        display: none;
+    }
+    .badge {
+        border: 1px solid #000;
+    }
+    .table {
+        border-collapse: collapse !important;
+    }
+    .table td,
+    .table th {
+        background-color: #fff !important;
+    }
+    .table-bordered td,
+    .table-bordered th {
+        border: 1px solid #ddd !important;
+    }
+  }
+}
+.second.active {
+  background-color: #000;
+}
+.site-main.about-template .title-section {
+  max-width: 1050px;
+  width: 100%;
+}
+.container-rg.extra-padding {
+  padding: 0 40px;
+}
+.container-rg {
+  display: block;
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+.site-main.about-template #contact-us .title-area {
+  position: relative;
+  float: left;
+  max-width: 500px;
+}
+@media (max-width: 1350px) {
+  .site-main.about-template #contact-us .title-area {
+      max-width: 350px;
+  }
+}
+@media (max-width: 768px) {
+  .site-main.about-template #contact-us .title-area {
+      width: 100%;
+      max-width: 500px;
+      margin: 0 auto;
+      float: none;
+      padding-top: 40px;
+  }
+}
+.site-main.with-contact-banner .single .contact-container .title-area .description {
+  margin-top: 40px;
+}
+.site-main.about-template #contact-us .desktop-area {
+  position: relative;
+  float: left;
+  width: 100%;
+}
+.site-main.about-template #contact-us .content-area {
+  width: calc(100% - 500px);
+  position: relative;
+  float: left;
+}
+@media (max-width: 1350px) {
+  .site-main.about-template #contact-us .content-area {
+      width: calc(100% - 350px);
+  }
+}
+@media (max-width: 768px) {
+  .site-main.about-template #contact-us .content-area {
+      width: 100%;
+      max-width: 500px;
+      margin: 0 auto;
+      float: none;
+      padding-top: 40px;
+  }
+}
+.site-main.about-template #contact-us .content-area .description {
+  position: relative;
+  float: left;
+  width: calc(100% - 500px);
+}
+@media (max-width: 768px) {
+  .site-main.about-template #contact-us .content-area .description {
+      width: 100%;
+  }
+}
+.site-main.about-template #contact-us .content-area .description .inner {
+  max-width: 250px;
+  margin: 0 auto;
+}
+@media (max-width: 768px) {
+  .site-main.about-template #contact-us .content-area .description .inner {
+      max-width: 100%;
+  }
+}
+@media (max-width: 1200px) {
+  .site-main.about-template #contact-us .content-area .description {
+      display: none;
+  }
+}
+@media (max-width: 991px) {
+  .site-main.about-template #contact-us .content-area .description {
+      display: block;
+      width: 100%;
+  }
+}
+.site-main.about-template #contact-us .content-area .locations-container {
+  float: right;
+  position: relative;
+}
+@media (max-width: 991px) {
+  .site-main.about-template #contact-us .content-area .locations-container.desktop-version {
+      display: none;
+  }
+}
+@media (max-width: 991px) {
+  .site-main.about-template #contact-us .content-area .locations-container {
+      width: 100%;
+  }
+}
+.site-main.about-template #contact-us .content-area .locations-container .half {
+  max-width: 215px;
+  margin-top: 0;
+  margin-bottom: 40px;
+}
+.site-main.about-template #contact-us .mobile-version {
+  text-align: center;
+  position: relative;
+  float: left;
+  width: 100%;
+}
+.site-main.with-contact-banner .contact-container .internal-content .locations-container .half {
+  padding: 0 15px;
+  margin-top: -5px;
+}
+.locations-container .half {
+  position: relative;
+  float: left;
+  width: 50%;
+}
+@media (max-width: 600px) {
+  .locations-container .half {
+      width: 100%;
+  }
+}
+.locations-container .half a {
+  display: block;
+  color: #000;
+}
+.locations-container .half p {
+  margin-bottom: 0;
+}
+.locations-container .half .title {
+  margin-bottom: 20px;
+  font-weight: 400;
+}
+.locations-container .half .name {
+  margin-bottom: 20px;
+}
+.locations-container .half .contact-area {
+  line-height: 1.75;
+}
+@media (max-width: 600px) {
+  .locations-container .half .contact-area {
+      max-width: 250px;
+  }
+}
+.site-main.about-template #contact-us .mobile-version .locations-container {
+  display: none;
+  margin-top: 40px;
+  float: none;
+  width: 100%;
+}
+@media (max-width: 991px) {
+  .site-main.with-contact-banner .contact-container .internal-content {
+    display: block;
+    margin: 0 auto;
+    float: none;
+  }
+}
+@media (max-width: 1200px) {
+  .site-main.with-contact-banner .contact-container .internal-content {
+    max-width: 450px;
+  }
+}
+.site-main.about-template #contact-us .mobile-version .locations-container .half {
+  text-align: left;
+}
+@media (max-width: 768px) {
+  .site-main.with-contact-banner .contact-container .internal-content .locations-container .half {
+    padding: 0;
+  }
+}
+@media (max-width: 991px) {
+  .site-main.with-contact-banner .contact-container .internal-content .locations-container .half {
+    margin-top: 40px;
+  }
+}
+@media (max-width: 991px) {
+  .site-main.about-template #contact-us .mobile-version .locations-container {
+      display: inline-block;
+      max-width: 500px;
+      margin-bottom: 40px;
+  }
+}
+.site-main.with-contact-banner .contact-container .internal-content .locations-container .half.socials {
+  width: 100%;
+  max-width: 600px;
+  margin: 40px 0;
+}
+.site-main.with-contact-banner .contact-container .internal-content .locations-container .half.socials .contact-area {
+  max-width: 335px;
+}
+.site-main.with-contact-banner .contact-container .internal-content .locations-container .half.socials a {
+  position: relative;
+  float: left;
+  margin-right: 25px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+@media (max-width: 600px) {
+  .site-main.with-contact-banner .contact-container .internal-content .locations-container .half.socials a {
+      margin-right: 15px;
+      margin-bottom: 10px;
+  }
+}
+.site-main.with-contact-banner .contact-container .internal-content .locations-container .half.socials a:after {
+  bottom: 0;
+}
