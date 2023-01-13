@@ -159,7 +159,7 @@ function initializeTheme() {
   }
   function h() {
       (p = setInterval(function () {
-          m < 5 ? m++ : ($(".next-project-link").trigger("click"), c());
+            m < 5 ? m++ : ($(".next-project-link").click(), c());
       }, 500)),
           d.push(p);
   }
