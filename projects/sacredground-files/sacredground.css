@@ -220,7 +220,7 @@ body.no-margin {
     margin-right: -5px;
 }
 @media (max-width: 768px) {
-    @media (max-height: 700px) {
+    @media (max-height: 800px) {
         .site-main.single-project .scrolling-wrapper .scroll-panel {
             height: 125vh;
         }
