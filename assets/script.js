@@ -159,7 +159,7 @@ function initializeTheme() {
   }
   function h() {
       (p = setInterval(function () {
-            m < 5 ? m++ : ($(".next-project-link").click(), c());
+            m < 5 ? m++ : (window.location.href = document.getElementById("next-project-link").href, c());
       }, 500)),
           d.push(p);
   }
