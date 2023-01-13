@@ -660,6 +660,11 @@ h3 {
   float: left;
   font-size: 60px;
 }
+@media (max-height: 600px), (max-width: 768px) {
+  .containing-animation .text {
+      font-size: 30px;
+  }
+}
 .containing-animation .animatingWrapper {
   height: 65px;
   min-width: 250px;
