@@ -264,9 +264,7 @@ function initializeTheme() {
   var p,
       d = [],
       m = 1;
-  $(".next-project-link").on("click", function () {
-      c();
-  }),
+  $(".next-project-link").click(function(){c()}),
       document.getElementById("fixed-footer") &&
           (($win = $(window)),
           $win
