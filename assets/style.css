@@ -4317,9 +4317,13 @@ a.read-more:hover:after {
 }
 .site-main.with-contact-banner .contact-container .internal-content {
     position: relative;
-    float: right;
+    float: left;
     max-width: 450px;
-    margin-top: 40px;
+    margin-top: 239px;
+    margin-left: 40px;
+}
+.site-main.with-contact-banner .contact-container .internal-content a {
+    color:black;
 }
 @media (max-width: 1200px) {
     .site-main.with-contact-banner .contact-container .internal-content {

@@ -187,6 +187,7 @@ h3 {
     }
   }
 }
+
 .second.active {
   background-color: #000;
 }
@@ -402,4 +403,7 @@ h3 {
 }
 .site-main.with-contact-banner .contact-container .internal-content .locations-container .half.socials a:after {
   bottom: 0;
+}
+.contact-area {
+  color: black;
 }
