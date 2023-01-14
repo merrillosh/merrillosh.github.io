@@ -296,6 +296,7 @@ body.no-margin {
 .site-main.single-project .scrolling-wrapper .scroll-panel .image-container.feature {
     margin-right: 120px;
     margin-left: 40px;
+    width: 50vw;
 }
 .site-main.single-project .scrolling-wrapper .scroll-panel .image-container img {
     height: 100%;
@@ -521,4 +522,13 @@ body.no-margin {
     left: 10px;
     top: -17.5px;
     margin: 0;
+}
+.tns-outer {
+    height: 100%;
+}
+.tns-inner {
+    height: 100%
+}
+.my-slider {
+    height: 100%
 }
