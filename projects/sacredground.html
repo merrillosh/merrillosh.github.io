@@ -232,7 +232,7 @@
                                     </div>
                                 </div>
                                 <div class="scroll-panel">
-                                    <div class="image-container feature">
+                                    <div class="image-container feature slider-box">
                                         <div class="my-slider">
                                             <div>
                                                 <img
@@ -294,7 +294,7 @@
                                     </div>
                                 </div>
                                 <div class="scroll-panel background-white">
-                                    <div class="image-container height-85">
+                                    <div class="image-container height-85 slider-box2">
                                         <div class="my-slider">
                                             <div>
                                                 <img
@@ -342,7 +342,7 @@
                                         </noscript>
                                         <img
                                             decoding="async"
-                                            class="lazyload image"
+                                            class="lazyload image no-bot"
                                             src="data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20210%20140%22%3E%3C/svg%3E"
                                             data-src="./sacredground-files/img/project2-img4.png"
                                             alt="Image"
@@ -352,8 +352,8 @@
                                 <div class="scroll-panel background-white full-height">
                                     <div class="image-container full-height">
                                         <noscript><video src="./sacredground-files/img/social_squished.mp4"></video></noscript>
-                                        <video autoplay class="image lazyload" decoding="async" style="height: 100vh">
-                                            <source src="./sacredground-files/img/social_squished.mp4"></source>
+                                        <video autoplay loop muted style="height: 100vh">
+                                            <source src="./sacredground-files/img/social_squished.mp4" type="video/mp4"></source>
                                         </video>
                                     </div>
                                 </div>
@@ -394,8 +394,9 @@
         <script defer src="../assets/script.js"></script>
     </body>
     <script>
-        let slider = tns({
-            container: '.my-slider',
+        document.querySelectorAll('.my-slider').forEach(slider => {
+        tns({
+            container: slider,
             items: 1,
             mode: 'gallery',
             autoplay: true,
@@ -403,5 +404,6 @@
             nav: false,
             autoplayButtonOutput: false
         });
+        })
       </script>
 </html>
