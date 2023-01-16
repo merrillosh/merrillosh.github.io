@@ -281,6 +281,13 @@ body.no-margin {
     height: 100vh;
     margin-left: 120px;
 }
+.site-main.single-project .scrolling-wrapper .scroll-panel .text-container {
+    padding: 12.5vh 0;
+    position: relative;
+    height: 100vh;
+    margin-left: 120px;
+    width: 450px;
+}
 .site-main.single-project .scrolling-wrapper .scroll-panel .image-container.height-75 {
     padding: 17.5vh 0;
 }
@@ -538,7 +545,7 @@ body.no-margin {
 .my-slider {
     height: 100%
 }
-.mobile-view video{
+.mobile-view video {
     width: 100vw
 }
 .mobile-view .slider-box {
@@ -561,4 +568,23 @@ body.no-margin {
     img.background-image {
         translate: 0;
     }
+}
+.text-container .text-inner {
+    position: absolute;
+    bottom: 12.5vh;
+}
+.text-container .title {
+    text-transform: uppercase;
+    font-size: 13px;
+    margin-bottom: 5px;
+    padding-left: 10px;
+    display: flex;
+}
+.text-container .text {
+    padding: 0 10px;
+    white-space: normal;
+}
+.text-container .text a {
+    color: black;
+    text-decoration: underline;
 }
