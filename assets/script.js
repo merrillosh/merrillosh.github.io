@@ -172,7 +172,6 @@ function initializeTheme() {
             (g = setInterval(function () {
                 ($active = $(".animatingWrapper .visible")), ($next = $active.next()), $active.removeClass("visible"), $next[0] ? $next.addClass("visible") : $(".animatingWrapper .word").first().addClass("visible");
             }, 1500));
-            console.log("hello world!");
         }
   }
   $(function () {

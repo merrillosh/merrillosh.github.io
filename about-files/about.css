@@ -227,7 +227,7 @@ h3 {
 .site-main.about-template #the-team .content-container .half {
   position: relative;
   float: left;
-  width: 55%;
+  width: 50%;
   padding-right: 50px;
 }
 @media (max-width: 768px) {
@@ -256,10 +256,10 @@ h3 {
   }
 }
 .site-main.about-template #the-team .image {
-  width: 100%;
-  margin-bottom: 20px;
+  width: 80%;
   position: relative;
   float: left;
+  margin: 20px 10%;
   margin-top: 0;
 }
 .site-main.about-template #team-members .member {
@@ -269,7 +269,7 @@ h3 {
 }
 .site-main.about-template #team-members .member .background {
   position: absolute;
-  width: 50%;
+  width: 55%;
   height: 100%;
   left: 0;
   top: 0;
@@ -438,7 +438,7 @@ h3 {
   text-transform: uppercase;
   font-size: 11px;
 }
-.site-main.about-template #about-us .half .title-span {
+.site-main.about-template .half .title-span {
   margin-bottom: 40px;
 }
 .site-main.about-template #about-us .half .specialty {
@@ -658,7 +658,6 @@ h3 {
 .containing-animation .text {
   position: relative;
   float: left;
-  font-size: 60px;
 }
 @media (max-height: 600px), (max-width: 768px) {
   .containing-animation .text {
@@ -666,14 +665,14 @@ h3 {
   }
 }
 .containing-animation .animatingWrapper {
-  height: 65px;
-  min-width: 500px;
+  height: 45px;
+  min-width: 100%;
   overflow: hidden;
   text-align: left;
   margin-bottom: 10px;
   position: relative;
   float: left;
-  margin-left: 7.5px;
+  margin-left: 0;
   margin-top: 5px;
 }
 @media (max-height: 600px), (max-width: 768px) {
@@ -685,13 +684,12 @@ h3 {
 }
 .containing-animation .animatingWrapper .word {
   color: #000;
-  font-size: 60px;
   font-weight: 100;
   margin: 0;
   padding: 0;
   display: block;
-  line-height: 65px;
-  height: 65px;
+  line-height: 45px;
+  height: 45px;
   letter-spacing: 0.5px;
   position: absolute;
   transform: translateY(100%);
@@ -872,14 +870,17 @@ h3 {
 #footnote-grid {
   display: grid;
   align-items: center;
+  width: 80%;
+  margin-left: 10%;
 }
 #footnote-grid .row {
-  margin-top: 15px;
+  margin-top: 12px;
   align-items: center;
 }
 #footnote-grid .note {
   margin-left: 10px;
   margin-bottom: 0;
+  font-size: 10px;
 }
 .row {
   display: flex;
@@ -894,6 +895,9 @@ h3 {
 }
 .fn, .accent {
   text-decoration: none;
+}
+.footnote-accent span {
+  box-shadow: inset 0px -75px 0px 0px rgba(202, 193, 184, 0.5);
 }
 .superscript {
   vertical-align: super;
