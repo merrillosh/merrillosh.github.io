@@ -256,10 +256,10 @@ h3 {
   }
 }
 .site-main.about-template #the-team .image {
-  width: 80%;
+  width: 98%;
   position: relative;
   float: left;
-  margin: 20px 10%;
+  margin: 20px 1%;
   margin-top: 0;
 }
 .site-main.about-template #team-members .member {
@@ -870,8 +870,8 @@ h3 {
 #footnote-grid {
   display: grid;
   align-items: center;
-  width: 80%;
-  margin-left: 10%;
+  width: 95%;
+  margin-left: 0;
 }
 #footnote-grid .row {
   margin-top: 12px;
