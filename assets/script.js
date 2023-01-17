@@ -167,12 +167,13 @@ function initializeTheme() {
       d.forEach(clearInterval), clearInterval(p), (clearInterval.length = 0), (m = 1);
   }
   function u() {
-      ($wrapper = $("#page.site")),
-          $wrapper.hasClass("is-animating") ||
-              ($wrapper.addClass("is-animating"),
-              (g = setInterval(function () {
-                  ($active = $(".animatingWrapper .visible")), ($next = $active.next()), $active.removeClass("visible"), $next[0] ? $next.addClass("visible") : $(".animatingWrapper .word").first().addClass("visible");
-              }, 1500)));
+        $wrapper = $("#page.site");
+        if ($wrapper.hasClass("is-animating")) {
+            (g = setInterval(function () {
+                ($active = $(".animatingWrapper .visible")), ($next = $active.next()), $active.removeClass("visible"), $next[0] ? $next.addClass("visible") : $(".animatingWrapper .word").first().addClass("visible");
+            }, 1500));
+            console.log("hello world!");
+        }
   }
   $(function () {
       setTimeout(function () {

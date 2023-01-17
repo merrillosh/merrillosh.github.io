@@ -102,6 +102,31 @@
                 a.appendChild(r);
             })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
         </script>
+        <script>
+            function addClass(element, nameOfClass) {
+                if (element.classList) {
+                    element.classList.add(nameOfClass);
+                }
+                else {
+                    var regExp = new RegExp('(\\s|^)' + nameOfClass + '(\\s|$)');
+                    if (!element.className.match(regExp)) {
+                        element.className += " " + nameOfClass;
+                    }
+                }
+            }
+
+            function removeClass(element, nameOfClass) {
+                if (element.classList) {
+                    element.classList.remove(nameOfClass);
+                }
+                else {
+                    var regExp = new RegExp('(\\s|^)' + nameOfClass + '(\\s|$)');
+                    if (element.className.match(regExp)) {
+                        element.className.replace(regExp, ' ');
+                    }
+                }
+            }
+        </script>
         <style type="text/css">
             iframe#_hjRemoteVarsFrame {
                 display: none !important;
@@ -158,167 +183,88 @@
                 </div>
             </header>
             <div id="menu-container"><div class="inner"></div></div>
+            <div id="introduction">
+                <div class="slide-1 slide"></div>
+                <div class="slide-2 slide"></div>
+                <div class="image-container"><img decoding="async" class="banner-logo" src="./assets/banner.svg" alt="banner" /></div>
+            </div>
             <div id="content" class="site-content">
-                <div id="primary" class="content-area">
+                <div id="primary" class="content-area homepage-content">
                     <main id="main" class="site-main about-template with-contact-banner">
                         <div class="contact-container">
-                            <div class="content-section full-padding">
+                            <!--<div class="content-section full-padding">
                                 <div class="container-lg extra-padding">
                                     <div class="title-section">
-                                        <span class="title-span wow fade-in-wow animated" style="visibility: visible;">Who the hell is Archie Bolden? </span>
+                                        <span class="title-span wow fade-in-wow animated" style="visibility: visible;">Who the hell is Merrill anyway? </span>
                                         <h2 class="wow fade-in-wow delay-100 containing-animation animated" style="visibility: visible;">
-                                            <span class="text" style="margin-right: 5px;">Archie Bolden is a </span>
+                                            <span class="text" style="margin-right: 5px;">I am a </span>
                                             <div class="animatingWrapper ready">
-                                                <span class="word visible"><span>d</span><span>e</span><span>s</span><span>i</span><span>g</span><span>n</span><span>e</span><span>r</span></span>
-                                                <span class="word"><span>c</span><span>r</span><span>e</span><span>a</span><span>t</span><span>o</span><span>r</span></span>
-                                                <span class="word"><span>l</span><span>o</span><span>v</span><span>e</span><span>r</span></span>
-                                                <span class="word"><span>f</span><span>i</span><span>g</span><span>h</span><span>t</span><span>e</span><span>r</span></span>
-                                                <span class="word"><span>m</span><span>o</span><span>v</span><span>e</span><span>r</span></span>
-                                                <span class="word"><span>s</span><span>h</span><span>a</span><span>k</span><span>e</span><span>r</span></span>
-                                                <span class="word grey">
-                                                    <span>o</span><span>c</span><span>c</span><span>a</span><span>s</span><span>i</span><span>o</span><span>n</span><span>a</span><span>l</span><span>&nbsp;</span><span>r</span><span>u</span>
-                                                    <span>l</span><span>e</span><span>&nbsp;</span><span>b</span><span>r</span><span>e</span><span>a</span><span>k</span><span>e</span><span>r</span>
+                                                <span class="word"><span>p</span><span>r</span><span>o</span><span>d</span><span>u</span><span>c</span><span>t</span><span>&nbsp;</span><span>d</span><span>e</span><span>s</span><span>i</span><span>g</span><span>n</span><span>e</span><span>r</span></span>
+                                                <span class="word"><span>w</span><span>e</span><span>b</span><span>&nbsp;</span><span>d</span><span>e</span><span>v</span><span>e</span><span>l</span><span>o</span><span>p</span><span>e</span><span>r</span></span>
+                                                <span class="word"><span>b</span><span>r</span><span>a</span><span>n</span><span>d</span><span>&nbsp;</span><span>b</span><span>u</span><span>i</span><span>l</span><span>d</span><span>e</span><span>r</span></span>
+                                                <span class="word"><span>U</span><span>X</span><span>&nbsp;</span><span>s</span><span>p</span><span>e</span><span>c</span><span>i</span><span>a</span><span>l</span><span>i</span><span>s</span><span>t</span></span>
+                                                <span class="word"><span>p</span><span>e</span><span>r</span><span>p</span><span>e</span><span>t</span><span>u</span><span>a</span><span>l</span><span>&nbsp;</span><span>s</span><span>t</span><span>u</span><span>d</span><span>e</span><span>n</span><span>t</span></span>
+                                                <span class="word grey"><span>o</span><span>c</span><span>c</span><span>a</span><span>s</span><span>i</span><span>o</span><span>n</span><span>a</span><span>l</span><span>&nbsp;</span><span>r</span><span>u</span><span>l</span><span>e</span><span>&nbsp;</span><span>b</span><span>r</span><span>e</span><span>a</span><span>k</span><span>e</span><span>r</span>
                                                 </span>
                                             </div>
                                             <span class="text"> Let us blaze your trail.</span>
                                         </h2>
                                     </div>
                                 </div>
-                            </div>
-                            <div id="the-team" class="content-section with-color taupe with-padding">
+                            </div>-->
+                            <div id="the-team" class="content-section" style="margin-top: 1.5em">
                                 <div class="container-rg extra-padding">
                                     <div class="content-container">
                                         <div class="content-title">
                                             <div class="half">
                                                 <h4 class="wow fade-in-wow animated" style="visibility: visible;">
-                                                    Archie Bolden is the audaciously creative brain child of daring duo <j>—</j> <i>Tara Dennis</i> and <i>Hayley Richards</i>. Archie is a cheeky interior architect, with a focus on bold interiors.
+                                                    Merrill O'Shaughnessy <j>&ndash;</j><br><br>
+                                                    An audaciously creative multidisciplinary designer, focused on all aspects of designing and launching physical and digital products.
                                                 </h4>
+                                                <p style="margin-top: 50px">
+                                                    I studied Human-centered Design and Informatics<span class="accent fn" id="accent1" onmouseover="addClass(fn1, 'footnote-accent');" onmouseout="removeClass(fn1, 'footnote-accent');">*</span> at Duke University, graduating with my B.A. in December 2022. I spent three years expanding my design skillset and applying both my passion for big-picture creative strategy and hands-on visual design work as a Creative Director and UX Designer at <a href="http://www.pitchstorylab.com">Pitch Story Lab</a>, a student powered marketing agency. <br><br>Previously, I also interned as a UX Designer at <a href="https://www.mastercard.us/en-us/vision/who-we-are/innovation.html">Mastercard</a>, rethinking some of their widest-reaching employee-facing tools and at <a href="https://wing.com/">Wing</a>, shaping customer interactions with their fleet of ultra-fast delivery drones. Outside of design, I worked at <a href="https://www.codeplatoon.org/">Code Platoon</a> teaching full-stack web development<span class="accent superscript fn" id="accent2" onmouseover="addClass(fn2, 'footnote-accent');" onmouseout="removeClass(fn2, 'footnote-accent');">†</span>. However, my real passion lies in concepting and creating unique identities that celebrate—not eliminate—the idiosyncrasies that connect customers to a brand. 
+                                                    <br><br>
+                                                    I grew up just outside of Chicago<span class="accent superscript fn" id="accent3" onmouseover="addClass(fn3, 'footnote-accent');" onmouseout="removeClass(fn3, 'footnote-accent');">‡</span>, make a lot of self deprecating jokes<span class="accent superscript fn" id="accent4" onmouseover="addClass(fn4, 'footnote-accent');" onmouseout="removeClass(fn4, 'footnote-accent');">§</span>, and enjoy getting my hands dirty exploring every step of the design process. I spend my free time drooling over beautiful packaging, clipping illustrations from newspapers, and raising a jungle of indoor plants<span class="accent superscript fn" id="accent5" onmouseover="addClass(fn5, 'footnote-accent');" onmouseout="removeClass(fn5, 'footnote-accent');">¶</span>.
+                                                    <br><br>
+                                                    Presently, I'm seeking full-time positions in UX and Brand Identity Design.
+                                                    </p>
+                                                </p>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="content-container">
-                                        <div class="half wow fade-in-wow animated" style="visibility: visible;">
-                                            In a past life, Archie Bolden was formerly known as TD Creative Agency - a Brisbane design studio, born in 2014 by the fearless, Tara Dennis. Fast forward half a decade, and we've evolved to have
-                                            dual city studios with projects scattered throughout Australia and the USA; and upon entering a new era of business - Archie Bolden was born.<br />
-                                            <br />
-                                            At Archie Bolden, we believe in people and we believe in design, and we bring those two elements together to create spaces that reflect the values, desires and intentions of those who engage us.
-                                        </div>
-                                        <div class="half wow fade-in-wow delay-100 animated" style="visibility: visible;">
-                                            We value the collaboration of minds, ideas and transparency; the connection of our service and your needs to produce an outcome that is a physical representation of your brand, personality and
-                                            aesthetic combined with our skills, experience and design capabilities.<br />
-                                            <br />
-                                            Archie Bolden is young, modern, enthusiastic and considered and has a knack for knowing what you want, (sometimes before you've even realised it yourself) and delivers it in a way that shoots the
-                                            sun out of the sky.
-                                        </div>
-                                    </div>
-                                    <img
-                                        decoding="async"
-                                        class="lazy image wow fade-in-wow in-view animated loaded"
-                                        data-src="https://sp-ao.shortpixel.ai/client/to_auto,q_glossy,ret_img/https://archiebolden.com/wp-content/uploads/2020/05/45-1-scaled-e1590471060765.jpg"
-                                        style="visibility: visible;"
-                                        src="./about-files/45-1-scaled-e1590471060765.jpg"
-                                        data-was-processed="true"
-                                    />
-                                    <div class="caption large">
-                                        <p class="image-subcaption wow fade-in-wow delay-100 animated" style="visibility: visible;">Tara, Dee, Julia &amp; Hayley</p>
-                                        <p class="image-caption wow fade-in-wow delay-100 animated" style="visibility: visible;">Archie's Artillery</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div id="team-members" class="content-section">
-                                <div class="member">
-                                    <div class="background position-1" style="background-color: #2d3f3e;"></div>
-                                    <div class="half first content-wrapper">
-                                        <div class="half-wrapper">
-                                            <div class="internal-half">
-                                                <div class="inner-wrapper">
-                                                    <h4 class="title wow fade-in-wow animated" style="visibility: visible;">They call her Tara <i>Powerhouse</i> Dennis, and with good reason <j>—</j> she's a force to be reckoned with.</h4>
-                                                    <div class="information wow fade-in-wow delay-100 animated" style="visibility: visible;">
-                                                        <p class="name with-hyphen">Tara Dennis -</p>
-                                                        <div class="brief">
-                                                            BDes(IntDes)(Honors)<br />
-                                                            BBus(Mgt&amp;InternatBus)<br />
-                                                            <br />
-                                                            Originally from Australia and now based in Atlanta, Tara is our fearless co-founder and director. Having grown up immersed in a family business focused on property development,
-                                                            Tara's innate knack for the industry runs deep in her blood and grew out of an early exposure to construction and design.<br />
-                                                            <br />
-                                                            Her relaxed management style, deep understanding of residential and commercial real estate, and passion for interior design enables her to combine the creative with the business
-                                                            and provide holistic solutions for clients. <br />
-                                                            <br />
-                                                            She rarely sits still for long, so if you're USA based you best be jumping on that contact button - STAT! Who knows, she could be in your city right this moment!? (We've given up
-                                                            trying to keep tabs on her!)
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="half second image-wrapper">
-                                        <div class="background position-1" style="background-color: #2d3f3e;"></div>
-                                        <div class="half-wrapper">
-                                            <div class="internal-half">
-                                                <div class="inner-wrapper full">
-                                                    <div class="image-wrapper wow fade-in-wow delay-200 animated" style="visibility: visible;">
-                                                        <img
-                                                            decoding="async"
-                                                            class="lazy image in-view loaded"
-                                                            data-src="https://sp-ao.shortpixel.ai/client/to_auto,q_glossy,ret_img/https://archiebolden.com/wp-content/uploads/2020/05/15_edited-min-scaled.jpg"
-                                                            src="./about-files/15_edited-min-scaled.jpg"
-                                                            data-was-processed="true"
-                                                        />
-                                                        <div class="caption">
-                                                            <p class="image-subcaption">Tara Dennis</p>
-                                                            <p class="image-caption">USA Director</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="member">
-                                    <div class="background position-2" style="background-color: #612830;"></div>
-                                    <div class="half first content-wrapper">
-                                        <div class="half-wrapper">
-                                            <div class="internal-half">
-                                                <div class="inner-wrapper">
-                                                    <h4 class="title wow fade-in-wow animated" style="visibility: visible;">Hayley’s like a bag of maltesers <j>—</j> sweet, but <i>full of balls.</i></h4>
-                                                    <div class="information wow fade-in-wow delay-100 animated" style="visibility: visible;">
-                                                        <p class="name with-hyphen">Hayley Richards -</p>
-                                                        <div class="brief">
-                                                            BDes(IntDes)(Honors)<br />
-                                                            <br />
-                                                            She tends not to take herself too seriously, but you most certainly should, because she’s a first class designer, who, as it so happens, graduated with first class honours!<br />
-                                                            <br />
-                                                            Hayley believes that life is complicated enough - and that good design doesn’t have to be. Hayley can read your mind and interpret your concept in a way that is authentically and
-                                                            holistically true to you.<br />
-                                                            <br />
-                                                            She's a weapon in her own right, but is big on multidisciplinary collaboration in producing holistic and user-centric solutions. With a love for raw and honest interiors, a razor
-                                                            sharp eye for detail and a value of integrity above all else, Hayley can turn a so-so space into magic. Without the wand.<br />
-                                                            <br />
-                                                            All hail Hayley.
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="half second image-wrapper">
-                                        <div class="background position-2" style="background-color: #612830;"></div>
-                                        <div class="half-wrapper">
-                                            <div class="internal-half">
-                                                <div class="inner-wrapper full">
-                                                    <div class="image-wrapper wow fade-in-wow delay-200 animated" style="visibility: visible;">
-                                                        <img
-                                                            decoding="async"
-                                                            class="lazy image in-view loaded"
-                                                            data-src="https://sp-ao.shortpixel.ai/client/to_auto,q_glossy,ret_img/https://archiebolden.com/wp-content/uploads/2020/05/18_edit-min-scaled.jpg"
-                                                            src="./about-files/18_edit-min-scaled.jpg"
-                                                            data-was-processed="true"
-                                                        />
-                                                        <div class="caption">
-                                                            <p class="image-subcaption">Hayley Richards</p>
-                                                            <p class="image-caption">AUS Director</p>
+                                        <div class="half second image-wrapper">
+                                            <div class="half-wrapper">
+                                                <div class="internal-half">
+                                                    <div class="inner-wrapper full">
+                                                        <div class="image-wrapper wow fade-in-wow delay-200 animated" style="visibility: visible;">
+                                                            <img
+                                                                decoding="async"
+                                                                class="lazy image in-view loaded"
+                                                                src="./about-files/img/about_pic.jpeg"
+                                                                data-was-processed="true"
+                                                            />
+                                                            <hr><hr style="margin-top: -7px;">
+                                                            <div id="footnote-grid" class="grid">
+
+                                                                <div class="row">
+                                                                <span class="accent infn column">*</span><p class="note column" id="fn1"><span> This isn't your typical major but a rigorous interdisciplinary academic program I created myself, combining two years of Engineering with courses in Statistics, Design, Computer Science, and Consumer Psych.<!---<a href="#ref1" class="fn" title="Jump back to footnote 1 in the text.">↩</a>---></span></p>
+                                                                </div>
+                                                                
+                                                                <div class="row">
+                                                                <span class="accent infn column">†</span><p class="note column" id="fn2"><span>Here's my full <a href="./MerrillO'Shaughnessy-Resume-Dec2022.pdf">resume</a><!---<a href="#ref2" class="fn" title="Jump back to footnote 2 in the text.">↩</a>---></span></p>
+                                                                </div>
+                                                                
+                                                                <div class="row">
+                                                                <span class="accent infn column">‡</span><p class="note column" id="fn3"><span>But I tell people I'm from Chicago like everyone else from the 'burbs.<!---<a href="#ref3" class="fn" title="Jump back to footnote 2 in the text.">↩</a>---></span></p>
+                                                                </div>
+                                                  
+                                                                <div class="row">
+                                                                <span class="accent infn column">§</span><p class="note column" id="fn4"><span>I don't get away with these as well as I'd like on the East Coast.<!---<a href="#ref4" class="fn" title="Jump back to footnote 2 in the text.">↩</a>---></span></p>
+                                                                </div>
+                                                  
+                                                                <div class="row">
+                                                                <span class="accent infn column">¶</span><p class="note column" id="fn5"><span>If you've gotten this far and are still interested in getting to know me better, connect with me on <a href="https://www.linkedin.com/in/merrill-oshaughnessy/" target="_blank">LinkedIn</a>, or better yet, send me an <a href="mailto:oshaughnessy.merrill@gmail.com" target="_blank" title="mailto:oshaughnessy.merrill@gmail.com" rel="noopener noreferrer nofollow">email</a>.<!---<a href="#ref5" class="fn" title="Jump back to footnote 2 in the text.">↩</a>---></span></p>
+                                                                </div>
+                                                                </div>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -327,7 +273,6 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="content-section single">
                         <div class="contact-container">
                             <div class="container-lg extra-padding">
                                 <div class="title-area">
