@@ -456,9 +456,6 @@ body.no-margin {
     display: block;
     max-width: 100%;
 }
-.site-main.single-project .scrolling-wrapper.mobile-view .scroll-panel .image-container .image.no-bot {
-    margin-bottom: 0px;
-}
 .site-main.single-project .scrolling-wrapper.mobile-view .scroll-panel .image-container.feature {
     padding: 0;
 }
@@ -596,4 +593,10 @@ body.no-margin {
 .text-container .text a {
     color: black;
     text-decoration: underline;
+}
+.video {
+    height: 100vh;
+}
+.mobile-view .video {
+    height: auto;
 }
