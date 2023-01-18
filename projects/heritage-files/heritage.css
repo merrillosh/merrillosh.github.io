@@ -465,7 +465,9 @@ body.no-margin {
     padding: 0;
 }
 .site-main.single-project .scrolling-wrapper.mobile-view .scroll-panel .image-container.feature .image {
-    margin-bottom: 0;
+    width: calc(100vw - 30px);
+    margin: 0 15px;
+    margin-bottom: 12.5vh;
 }
 .site-main.single-project .scrolling-wrapper.mobile-view .scroll-panel .description {
     text-align: center;
@@ -479,6 +481,7 @@ body.no-margin {
 .site-main.single-project .scrolling-wrapper.mobile-view .scroll-panel .description .title-area .project-content .more-information {
     display: block;
     background-color: #fff;
+    color: #000;
     position: fixed;
     z-index: 99;
     width: 100vw;
