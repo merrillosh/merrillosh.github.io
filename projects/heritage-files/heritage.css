@@ -439,6 +439,15 @@ body.no-margin {
     height: auto;
     padding: 0 40px;
 }
+.site-main.single-project .scrolling-wrapper.mobile-view .scroll-panel .text-container {
+  margin: 40px 25px;
+  width: calc(100% - 50px);
+  padding: 5vh 0;
+  height: fit-content;
+}
+.site-main.single-project .scrolling-wrapper.mobile-view .scroll-panel .text-container .text-inner {
+  position: relative;
+}
 .site-main.single-project .scrolling-wrapper.mobile-view .scroll-panel .image-container.full-height {
     padding: 0;
 }
