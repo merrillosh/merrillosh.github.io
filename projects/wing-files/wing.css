@@ -87,7 +87,7 @@ progress {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
-    color: #fff;
+    color: #000;
     text-align: center;
     background-color: #007bff;
     transition: width 0.6s ease;
@@ -286,7 +286,8 @@ body.no-margin {
     position: relative;
     height: 100vh;
     margin-left: 120px;
-    width: 450px;
+    width: 500px;
+    color: #000;
 }
 .site-main.single-project .scrolling-wrapper .scroll-panel .image-container.height-75 {
     padding: 17.5vh 0;
@@ -303,11 +304,10 @@ body.no-margin {
 .site-main.single-project .scrolling-wrapper .scroll-panel .image-container.feature {
     margin-right: 120px;
     margin-left: 40px;
-    width: calc(678.65 / 940.5 * 75vh);
+    width: calc(1.5 / 1 * 75vh);
 }
-.site-main.single-project .scrolling-wrapper .scroll-panel .image-container.slider-box2 {
-    margin-left: 120px;
-    width: calc(5346 / 7855 * 75vh);
+.site-main.single-project .scrolling-wrapper .scroll-panel .image-container.paired {
+    margin-left: 20px;
 }
 .site-main.single-project .scrolling-wrapper .scroll-panel .image-container img {
     height: 100%;
@@ -319,6 +319,7 @@ body.no-margin {
     background-color: #fff;
     margin-left: 0px;
     white-space: normal;
+    color: #000;
 }
 .site-main.single-project .scrolling-wrapper .scroll-panel.next-project .title-area {
     position: relative;
@@ -362,6 +363,7 @@ body.no-margin {
     text-transform: uppercase;
     letter-spacing: 1.5px;
     margin-bottom: 40px;
+    color: #000;
 }
 @media (max-height: 768px) {
     .site-main.single-project .fixed-progress-bar .title {
@@ -446,6 +448,9 @@ body.no-margin {
 .site-main.single-project .scrolling-wrapper.mobile-view .scroll-panel .text-container .text-inner {
   position: relative;
 }
+.site-main.single-project .scrolling-wrapper.mobile-view .scroll-panel .text-container .text-inner.followed {
+  bottom: 0;
+}
 .site-main.single-project .scrolling-wrapper.mobile-view .scroll-panel .image-container.full-height {
     padding: 0;
 }
@@ -463,7 +468,9 @@ body.no-margin {
     padding: 0;
 }
 .site-main.single-project .scrolling-wrapper.mobile-view .scroll-panel .image-container.feature .image {
-    margin-bottom: 0;
+    width: calc(100vw - 30px);
+    margin: 0 15px;
+    margin-bottom: 12.5vh;
 }
 .site-main.single-project .scrolling-wrapper.mobile-view .scroll-panel .description {
     text-align: center;
@@ -477,6 +484,7 @@ body.no-margin {
 .site-main.single-project .scrolling-wrapper.mobile-view .scroll-panel .description .title-area .project-content .more-information {
     display: block;
     background-color: #fff;
+    color: #000;
     position: fixed;
     z-index: 99;
     width: 100vw;
@@ -554,6 +562,12 @@ body.no-margin {
 .my-slider {
     height: 100%
 }
+.video {
+  height: 100%;
+}
+.mobile-view .video {
+  height: auto;
+}
 .mobile-view video {
     width: 100vw
 }
@@ -596,4 +610,16 @@ body.no-margin {
 .text-container .text a {
     color: black;
     text-decoration: underline;
+}
+.framerPrototypeContainer {
+    height: 100%;
+    width: 50vw;
+}
+.framerWebContainer {
+    height: 100%;
+    width: 100%;
+}
+.framerPrototype.framerWeb {
+    height: 100%;
+    width: 100%;
 }
