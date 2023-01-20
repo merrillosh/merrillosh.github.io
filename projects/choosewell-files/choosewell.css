@@ -577,7 +577,7 @@ body.no-margin {
     margin-bottom: 12.5vh;
 }
 .mobile-view .slider-box2 {
-    height: calc(7855 / 5346 * (100vw - 80px) + 12.5vh) !important;
+    height: calc(79 / 57 * (100vw - 80px) + 12.5vh) !important;
     width: calc(100vw - 80px) !important;
     padding: 0 !important;
     padding-top: 12.5vh !important;
