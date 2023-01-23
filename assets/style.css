@@ -5074,7 +5074,7 @@ a.read-more:hover:after {
     height: 100vh;
     position: fixed;
     z-index: 105;
-    background-color: #1E1E1E;
+    background-color: #2C3E3D;
     cursor: pointer;
     overflow: hidden;
 }
