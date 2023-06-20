@@ -3987,8 +3987,11 @@ h4 {
 #masthead .inner-container #menu .menu-circle {
     width: 25px;
     height: 25px;
-    border: 1px solid #000;
-    border-radius: 100%;
+    border: none;
+    border-radius: 0;
+    
+    /*border: 1px solid #000;
+    border-radius: 100%;*/
 }
 .lazy {
     opacity: 0;
@@ -4370,7 +4373,7 @@ a.read-more:hover:after {
 #menu.active .menu-circle {
     width: 25px;
     height: 25px;
-    background-color: #000;
+    /*background-color: #000;*/
 }
 #menu.active span {
     color: #fff;
