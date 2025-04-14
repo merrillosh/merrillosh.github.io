@@ -1,0 +1,602 @@
+@charset "UTF-8";
+.has-white-color {
+    color: var(--preset--color--white) !important;
+}
+.has-white-background-color {
+    background-color: var(--preset--color--white) !important;
+}
+.full_width,
+.one_fifth,
+.one_fourth,
+.one_half,
+.one_sixth,
+.one_third {
+    float: left;
+}
+.clear_column {
+    clear: both;
+    display: block;
+    font-size: 0;
+    height: 0;
+    line-height: 0;
+    width: 100%;
+    overflow: hidden;
+}
+.full_width {
+    width: 100%;
+}
+.one_half {
+    width: 50%;
+}
+.one_third {
+    width: 33.3%;
+}
+.one_fourth {
+    width: 25%;
+}
+.one_fifth {
+    width: 20%;
+}
+.one_sixth {
+    width: 16.6%;
+}
+@media screen and (max-width: 600px) {
+    .full_width,
+    .one_fifth,
+    .one_fourth,
+    .one_half,
+    .one_sixth,
+    .one_third {
+        clear: both;
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 1em;
+    }
+} 
+@-ms-viewport {
+    width: device-width;
+}
+article,
+footer,
+header,
+main {
+    display: block;
+}
+progress {
+    vertical-align: baseline;
+}
+.progress {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 1rem;
+    overflow: hidden;
+    font-size: 0.75rem;
+    background-color: #e9ecef;
+    border-radius: 0.25rem;
+}
+.progress-bar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+    background-color: #007bff;
+    transition: width 0.6s ease;
+}
+progress {
+    vertical-align: baseline;
+}
+details {
+    display: block;
+}
+.clear:after,
+.clear:before,
+.site-content:after,
+.site-content:before,
+.site-footer:after,
+.site-footer:before,
+.site-header:after,
+.site-header:before {
+    content: "";
+    display: table;
+    table-layout: fixed;
+}
+.clear:after,
+.site-content:after,
+.site-footer:after,
+.site-header:after {
+    clear: both;
+}
+body.no-margin {
+    margin-bottom: 0;
+}
+.fade-in-element {
+    opacity: 0;
+    -webkit-transform: translateY(30px);
+    transform: translateY(30px);
+    -webkit-transition: opacity 0.75s ease, -webkit-transform 0.75s ease;
+    transition: opacity 0.75s ease, -webkit-transform 0.75s ease;
+    transition: opacity 0.75s ease, transform 0.75s ease;
+    transition: opacity 0.75s ease, transform 0.75s ease, -webkit-transform 0.75s ease;
+}
+.fade-in-element.fade-in-only {
+    transform: none;
+    -webkit-transform: none;
+}
+.fade-in-element.fade-in {
+    opacity: 1;
+    transform: none;
+    -webkit-transform: none;
+}
+.fade-in-element.delay-100 {
+    transition-delay: 0.25s;
+}
+.fade-in-element.delay-200 {
+    transition-delay: 0.45s;
+}
+.fade-in-element.delay-300 {
+    transition-delay: 0.65s;
+}
+.fade-in-element.delay-400 {
+    transition-delay: 0.85s;
+}
+.fade-in-element.fade-out, .fade-in-wow.fade-out {
+    opacity: 0;
+    -webkit-transform: translateY(30px);
+    transform: translateY(30px);
+}
+.loader {
+    position: relative;
+    float: left;
+    margin: auto;
+}
+.loader .loading-circle {
+    transition: 4s ease stroke-dashoffset;
+}
+.loader.loading .loading-circle {
+    stroke-dashoffset: 0;
+}
+.scroll-marker {
+    position: relative;
+}
+.scroll-marker .scroll {
+    display: block;
+    margin-top: 4px;
+    float: left;
+    width: 45px;
+    height: 1px;
+    margin-left: 15px;
+    background-color: #000;
+}
+.scroll-marker .tagline {
+    text-transform: uppercase;
+    font-size: 11px;
+    margin: 0;
+    position: relative;
+    float: left;
+}
+.site-main.single-project .scrolling-wrapper {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+}
+.site-main.single-project .scrolling-wrapper .scroll-panel {
+    display: inline-block;
+    height: 100vh;
+    vertical-align: top;
+    margin-right: -5px;
+}
+.site-main.single-project .scrolling-wrapper .scroll-panel.background-white {
+    background-color: #fff;
+}
+.site-main.single-project .scrolling-wrapper .scroll-panel .description {
+    position: relative;
+    top: 50%;
+    transform: translateY(-40%);
+    padding: 40px;
+}
+@media (max-width: 768px) {
+    .site-main.single-project .scrolling-wrapper .scroll-panel .description {
+        padding: 40px 25px;
+    }
+}
+.site-main.single-project .scrolling-wrapper .scroll-panel .description .title-area {
+    display: inline-block;
+    vertical-align: middle;
+    white-space: normal;
+}
+.site-main.single-project .scrolling-wrapper .scroll-panel .description .title-area .title {
+    margin-bottom: 0;
+}
+.site-main.single-project .scrolling-wrapper .scroll-panel .description .title-area .subtitle,
+.site-main.single-project .scrolling-wrapper .scroll-panel .description .title-area .title {
+    max-width: 650px;
+    text-align: left;
+}
+.site-main.single-project .scrolling-wrapper .scroll-panel .description .title-area .project-content {
+    margin-top: 40px;
+}
+.site-main.single-project .scrolling-wrapper .scroll-panel .description .title-area .project-content .user-content {
+    max-width: 450px;
+    white-space: normal;
+    display: inline-block;
+    margin-right: 80px;
+}
+.site-main.single-project .scrolling-wrapper .scroll-panel .description .title-area .project-content .user-content p {
+    margin-bottom: 10px;
+}
+.site-main.single-project .scrolling-wrapper .scroll-panel .description .title-area .project-content .user-content .content-column {
+    padding: 0 10px;
+    margin-bottom: 10px;
+}
+@media (max-width: 600px) {
+    .site-main.single-project .scrolling-wrapper .scroll-panel .description .title-area .project-content .user-content .content-column {
+        padding: 0;
+    }
+}
+.site-main.single-project .scrolling-wrapper .scroll-panel .description .title-area .project-content .more-information {
+    display: inline-block;
+    vertical-align: top;
+    max-width: 300px;
+}
+.site-main.single-project .scrolling-wrapper .scroll-panel .description .title-area .project-content .more-information .field {
+    position: relative;
+    float: left;
+    width: 50%;
+    margin-bottom: 25px;
+    min-width: 125px;
+}
+.site-main.single-project .scrolling-wrapper .scroll-panel .description .title-area .project-content .more-information .field p {
+    margin-bottom: 5px;
+}
+.site-main.single-project .scrolling-wrapper .scroll-panel .description .more-info-link {
+    position: relative;
+    float: right;
+    margin-right: 15px;
+    font-size: 14px;
+    cursor: pointer;
+    opacity: 0;
+}
+.site-main.single-project .scrolling-wrapper .scroll-panel .description .scroll-marker {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 40px;
+    margin-top: 35px;
+}
+.site-main.single-project .scrolling-wrapper .scroll-panel .description .scroll-marker .scroll {
+    margin-top: 7.5px;
+}
+.site-main.single-project .scrolling-wrapper .scroll-panel .image-container {
+    padding: 12.5vh 0;
+    position: relative;
+    height: 100vh;
+    margin-left: 120px;
+}
+.site-main.single-project .scrolling-wrapper .scroll-panel .text-container {
+    padding: 12.5vh 0;
+    position: relative;
+    height: 100vh;
+    margin-left: 120px;
+    width: 450px;
+}
+.site-main.single-project .scrolling-wrapper .scroll-panel .image-container.height-75 {
+    padding: 17.5vh 0;
+}
+.site-main.single-project .scrolling-wrapper .scroll-panel .image-container.height-65 {
+    padding: 22.5vh 0;
+}
+.site-main.single-project .scrolling-wrapper .scroll-panel .image-container.no-margin {
+    margin-left: 0;
+}
+.site-main.single-project .scrolling-wrapper .scroll-panel .image-container.full-height {
+    padding: 0;
+}
+.site-main.single-project .scrolling-wrapper .scroll-panel .image-container.feature {
+    margin-right: 120px;
+    margin-left: 40px;
+    width: calc(678.65 / 940.5 * 75vh);
+}
+.site-main.single-project .scrolling-wrapper .scroll-panel .image-container.slider-box2 {
+    margin-left: 120px;
+    width: calc(5346 / 7855 * 75vh);
+}
+.site-main.single-project .scrolling-wrapper .scroll-panel .image-container img {
+    height: 100%;
+    width: auto;
+    max-width: none;
+}
+.site-main.single-project .scrolling-wrapper .scroll-panel.next-project {
+    width: 100vw;
+    background-color: #fff;
+    margin-left: 0px;
+    white-space: normal;
+}
+.site-main.single-project .scrolling-wrapper .scroll-panel.next-project .title-area {
+    position: relative;
+    float: left;
+    top: 50%;
+    left: 50%;
+    max-width: 650px;
+    transform: translate(-50%, -50%);
+    margin-top: 40px;
+}
+.site-main.single-project .scrolling-wrapper .scroll-panel.next-project .title-area .overline {
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+.site-main.single-project .scrolling-wrapper .scroll-panel.next-project .title-area .subtitle,
+.site-main.single-project .scrolling-wrapper .scroll-panel.next-project .title-area .title {
+    margin: 0;
+    color: #000;
+}
+.site-main.single-project .scrolling-wrapper .scroll-panel.next-project .title-area a:hover {
+    text-decoration: none;
+}
+.site-main.single-project .scrolling-wrapper .scroll-panel.next-project .loader {
+    margin-top: 40px;
+}
+.site-main.single-project .fixed-progress-bar {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    bottom: 40px;
+    left: 40px;
+    width: calc(100vw - 80px);
+    z-index: 3;
+}
+@media (max-width: 768px) {
+    .site-main.single-project .fixed-progress-bar {
+        display: none;
+    }
+}
+.site-main.single-project .fixed-progress-bar .title {
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-bottom: 40px;
+}
+@media (max-height: 768px) {
+    .site-main.single-project .fixed-progress-bar .title {
+        margin-bottom: 10px;
+    }
+}
+.site-main.single-project .fixed-progress-bar .progressBar .initial {
+    position: relative;
+    float: left;
+    width: 10%;
+    height: 1px;
+    background-color: #000;
+}
+.site-main.single-project .fixed-progress-bar .progressBar .trackBar {
+    position: relative;
+    float: left;
+    width: 90%;
+    height: 1px;
+}
+.site-main.single-project .fixed-progress-bar .progressBar .trackBar .tracker {
+    position: relative;
+    float: left;
+    height: 1px;
+    background-color: #000;
+}
+.site-main.single-project .projects-back {
+    position: fixed;
+    top: 65px;
+    right: 40px;
+    width: 30px;
+    height: 30px;
+    background-image: url(../../assets/img/close.png);
+    background-size: 75%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    z-index: 105;
+    opacity: 0.7;
+}
+.site-main.single-project .projects-back:hover {
+    opacity: 1;
+}
+@media (max-width: 768px) {
+    .site-main.single-project .projects-back {
+        top: 100px;
+        right: 30px;
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        z-index: 99;
+    }
+}
+
+.site-main.single-project .scrolling-wrapper.mobile-view {
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+.site-main.single-project .scrolling-wrapper.mobile-view .scroll-panel {
+    position: relative;
+    float: left;
+    width: 100%;
+    height: auto;
+}
+.site-main.single-project .scrolling-wrapper.mobile-view .scroll-panel .description {
+    top: auto;
+    transform: none;
+    margin: 80px 0;
+}
+.site-main.single-project .scrolling-wrapper.mobile-view .scroll-panel .description .more-info-link {
+    opacity: 1;
+}
+.site-main.single-project .scrolling-wrapper.mobile-view .scroll-panel .text-container {
+    margin: 40px 25px;
+    width: calc(100% - 50px);
+    padding: 5vh 0;
+    height: fit-content;
+}
+.site-main.single-project .scrolling-wrapper.mobile-view .scroll-panel .text-container .text-inner {
+    position: relative;
+}
+.site-main.single-project .scrolling-wrapper.mobile-view .scroll-panel .image-container {
+    margin: 0 auto;
+    height: auto;
+    padding: 0 40px;
+}
+.site-main.single-project .scrolling-wrapper.mobile-view .scroll-panel .image-container.full-height {
+    padding: 0;
+}
+.site-main.single-project .scrolling-wrapper.mobile-view .scroll-panel .image-container .image {
+    height: auto;
+    margin: 0 auto;
+    margin-bottom: 80px;
+    display: block;
+    max-width: 100%;
+}
+.site-main.single-project .scrolling-wrapper.mobile-view .scroll-panel .image-container.feature {
+    padding: 0;
+}
+.site-main.single-project .scrolling-wrapper.mobile-view .scroll-panel .image-container.feature .image {
+    margin-bottom: 0;
+}
+.site-main.single-project .scrolling-wrapper.mobile-view .scroll-panel .description {
+    text-align: center;
+}
+.site-main.single-project .scrolling-wrapper.mobile-view .scroll-panel .description .title-area .project-content {
+    text-align: left;
+}
+.site-main.single-project .scrolling-wrapper.mobile-view .scroll-panel .description .title-area .project-content .user-content {
+    margin-right: 0;
+}
+.site-main.single-project .scrolling-wrapper.mobile-view .scroll-panel .description .title-area .project-content .more-information {
+    display: block;
+    background-color: #fff;
+    position: fixed;
+    z-index: 99;
+    width: 100vw;
+    bottom: 0;
+    left: 0;
+    padding: 40px 20px;
+    padding-bottom: 20px;
+    max-width: 100vw;
+    display: none;
+    cursor: pointer;
+    transition: none;
+}
+.site-main.single-project .scrolling-wrapper.mobile-view .scroll-panel .description .title-area .project-content .more-information:before {
+    content: "INFO";
+    position: relative;
+    float: left;
+    width: 100%;
+    margin-bottom: 20px;
+    font-size: 14px;
+    letter-spacing: 2px;
+    padding-left: 22.5px;
+}
+.site-main.single-project .scrolling-wrapper.mobile-view .scroll-panel .description .title-area .project-content .more-information:after {
+    content: "";
+    position: absolute;
+    top: 41.5px;
+    left: 20px;
+    width: 15px;
+    height: 15px;
+    background-image: url(../assets/return.png);
+    background-size: 60%;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.site-main.single-project .scrolling-wrapper.mobile-view .scroll-panel .description .title-area .project-content .more-information.open {
+    display: block;
+}
+.site-main.single-project .scrolling-wrapper.mobile-view .scroll-panel.next-project {
+    height: 80vh;
+    margin-top: -5px;
+    margin-left: 0;
+}
+.site-main.single-project .scrolling-wrapper.mobile-view .scroll-panel.next-project .title-area {
+    padding: 40px;
+}
+.site-main.single-project .scrolling-wrapper.mobile-view .scroll-panel.background-white {
+    padding-top: 0;
+    margin-top: -5px;
+}
+.site-main.single-project .scrolling-wrapper.mobile-view .description .scroll-marker {
+    position: relative;
+    float: left;
+    margin: 0;
+    margin-top: 20px;
+    padding-left: 0;
+    margin-left: -7.5px;
+}
+.site-main.single-project .scrolling-wrapper.mobile-view .description .scroll-marker .tagline {
+    transform: rotate(90deg);
+}
+.site-main.single-project .scrolling-wrapper.mobile-view .description .scroll-marker .scroll {
+    width: 1px;
+    height: 60px;
+    position: absolute;
+    left: 10px;
+    top: -17.5px;
+    margin: 0;
+}
+.tns-outer {
+    height: 100%;
+}
+.tns-inner {
+    height: 100%
+}
+.my-slider {
+    height: 100%
+}
+.mobile-view video {
+    width: 100vw
+}
+.mobile-view .slider-box {
+    height: calc(940.5 / 678.65 * (100vw - 80px) + 12.5vh) !important;
+    width: calc(100vw - 80px) !important;
+    padding-top: 12.5vh !important;
+    bottom: 12.5vh;
+}
+.mobile-view .slider-box2 {
+    height: calc(7855 / 5346 * (100vw - 80px) + 12.5vh) !important;
+    width: calc(100vw - 80px) !important;
+    padding: 0 !important;
+    padding-top: 12.5vh !important;
+    bottom: 12.5vh;
+}
+.mobile-view img.background-image {
+    margin-left: 0;
+}
+@media (max-width: 768px) {
+    img.background-image {
+        translate: 0;
+    }
+}
+.text-container .text-inner {
+    position: absolute;
+    bottom: 12.5vh;
+}
+.text-container .title {
+    text-transform: uppercase;
+    font-size: 13px;
+    margin-bottom: 5px;
+    padding-left: 10px;
+    display: flex;
+}
+.text-container .text {
+    padding: 0 10px;
+    white-space: normal;
+}
+.text-container .text a {
+    color: black;
+    text-decoration: underline;
+}
+.video {
+    height: 100vh;
+}
+.mobile-view .video {
+    height: auto;
+}
