@@ -897,7 +897,7 @@ h3 {
   text-decoration: none;
 }
 .footnote-accent span {
-  box-shadow: inset 0px -75px 0px 0px rgba(202, 193, 184, 0.5);
+  box-shadow: inset 0px -75px 0px 0px rgba(210, 216, 190, 1);
 }
 .superscript {
   vertical-align: super;

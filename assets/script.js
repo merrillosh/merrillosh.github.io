@@ -252,17 +252,15 @@ function initializeTheme() {
                           ($project3 = $("#project-3").offset().top + 100),
                           ($project4 = $("#project-4").offset().top + 100),
                           ($project5 = $("#project-5").offset().top + 100),
-                          ($project6 = $("#project-6").offset().top + 100),
                           $scroll > $projects ? $("#fixed-footer").addClass("hidden-element") : $("#fixed-footer").removeClass("hidden-element"),
                           $bottomScroll > $project1
                               ? ($("#fixed-footer .scroll .scrolling, #fixed-footer .landing-read-more").removeClass("visible"), $("#fixed-footer .scroll .view, #fixed-footer .navigation").addClass("visible"))
                               : ($("#fixed-footer .scroll .scrolling, #fixed-footer .landing-read-more").addClass("visible"), $("#fixed-footer .scroll .view, #fixed-footer .navigation").removeClass("visible")),
-                          $bottomScroll > $project1 && $bottomScroll < $project2 && ($("#fixed-footer .navigation").text("1/6"), $("#fixed-footer .view").attr("href", $("#title-1").attr("data-link"))),
-                          $bottomScroll > $project2 && $bottomScroll < $project3 && ($("#fixed-footer .navigation").text("2/6"), $("#fixed-footer .view").attr("href", $("#title-2").attr("data-link"))),
-                          $bottomScroll > $project3 && $bottomScroll < $project4 && ($("#fixed-footer .navigation").text("3/6"), $("#fixed-footer .view").attr("href", $("#title-3").attr("data-link"))),
-                          $bottomScroll > $project4 && $bottomScroll < $project5 && ($("#fixed-footer .navigation").text("4/6"), $("#fixed-footer .view").attr("href", $("#title-4").attr("data-link"))),
-                          $bottomScroll > $project5 && $bottomScroll < $project6 && ($("#fixed-footer .navigation").text("5/6"), $("#fixed-footer .view").attr("href", $("#title-5").attr("data-link"))),
-                          $bottomScroll > $project6 && ($("#fixed-footer .navigation").text("6/6"), $("#fixed-footer .view").attr("href", $("#title-6").attr("data-link"))));
+                          $bottomScroll > $project1 && $bottomScroll < $project2 && ($("#fixed-footer .navigation").text("1/5"), $("#fixed-footer .view").attr("href", $("#title-1").attr("data-link"))),
+                          $bottomScroll > $project2 && $bottomScroll < $project3 && ($("#fixed-footer .navigation").text("2/5"), $("#fixed-footer .view").attr("href", $("#title-2").attr("data-link"))),
+                          $bottomScroll > $project3 && $bottomScroll < $project4 && ($("#fixed-footer .navigation").text("3/5"), $("#fixed-footer .view").attr("href", $("#title-3").attr("data-link"))),
+                          $bottomScroll > $project4 && $bottomScroll < $project5 && ($("#fixed-footer .navigation").text("4/5"), $("#fixed-footer .view").attr("href", $("#title-4").attr("data-link"))),
+                          $bottomScroll > $project5 && ($("#fixed-footer .navigation").text("5/5"), $("#fixed-footer .view").attr("href", $("#title-5").attr("data-link"))));
               })
               .on("resize", function () {
                   $windowHeight = $(this).height();
