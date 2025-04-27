@@ -4012,6 +4012,11 @@ i {
         margin-bottom: 40px;
     }
 }
+@media (max-width: 768px) {
+    .text-white {
+        color: #fff !important;
+    }
+}
 .caption {
     position: relative;
     float: left;
@@ -4913,6 +4918,25 @@ a.read-more:hover:after {
 #main.home .content-section .half .content-wrapper .internal .title-caption {
     max-width: 550px;
 }
+
+#title-cap {
+    font-size: 70px; 
+    margin-bottom: 40px;
+}
+
+@media (max-width: 768px) {
+    #title-cap {
+        font-size: 39px;
+    }
+}
+
+@media (max-width: 991px) {
+    #title-cap {
+        font-size: 45px;
+    }
+}
+
+
 #main.home .content-section .half .content-wrapper .internal .read-more {
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -5088,7 +5112,7 @@ a.read-more:hover:after {
     height: 100vh;
     position: fixed;
     z-index: 105;
-    background-color: #2C3E3D;
+    background-color: #063131;
     cursor: pointer;
     overflow: hidden;
 }
